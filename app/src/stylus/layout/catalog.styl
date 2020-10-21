@@ -1,0 +1,61 @@
+.about-section
+  position relative
+  padding-left 100px
+  img
+    position absolute
+    top: 0
+    left: 0
+.section-top
+  display flex
+  flex-direction row
+  justify-content: space-between
+.catalog
+  padding-top: 245px
+  &-heading
+    color: #ffffff
+    margin-bottom 35px
+  &-text
+    max-width: 480px
+  &-block
+    margin-top: 190px
+  &-list
+    background-color $blue
+    display flex
+    flex-direction row
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    min-width: 475px
+    display: flex
+    flex-direction row
+    justify-content: center
+    align-items: center
+    text-align center
+    padding: 70px 160px
+    border-bottom 1px solid rgb(51, 102, 204)
+    border-right 1px solid rgb(51, 102, 204)
+    &:nth-child(4)
+      min-width 50%
+    &:nth-child(5)
+      min-width 50%
+
+.curcle-link
+  width: 268px
+  height: 268px
+  display flex
+  flex-direction column
+  justify-content: center
+  align-items: center
+  border-radius 50%
+  background-color $blue
+  span
+    font-family "Inter", sans-serif
+    font-weight 700
+    font-size 11px
+    color: #ffffff
+  &__href
+    color: #ffffff
+    border-bottom 1px solid #ffffff
+    margin-bottom 5px
+    .underline
+      line-height 18px

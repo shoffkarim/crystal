@@ -10,3 +10,49 @@ common-text()
   color: #000000
 .common-text
   common-text()
+  &__black
+    color: #000000
+  &__white
+    color: #ffffff
+
+.common-h2
+  font-family: "Inter", sans-serif
+  font-weight 700
+  font-size 50px
+
+
+.video-fix
+  position absolute
+  top: 50%
+  left: 50%
+  min-height: 100%
+  height: auto
+  min-width: 100%
+  -webkit-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  opacity: 1
+
+.section
+  z-index 10
+  .container
+    max-width 1440px
+.video-container__fix
+  position: fixed
+  top: 50%
+  left: 50%
+  min-height: 100%
+  height: auto
+  min-width: 100%
+  -webkit-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  z-index: -1
+  &::before
+    content: ""
+    position absolute
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    height: 100%
+    background-color rgba(0, 0, 0, 0.5)
+    z-index 1
