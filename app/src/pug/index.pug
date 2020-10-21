@@ -2,4 +2,14 @@ doctype html
 html
   head(lang="ru")
     include includes/__head
-  body
+  body.index
+    include includes/sections/__header
+    main
+      .video-container__fix
+        video.video-fix(preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png")
+          source(src="video/video-main.mp4" type="video/mp4")
+      include includes/sections/__catalog
+      include includes/sections/__offer
+      include includes/sections/__company
+      include includes/sections/__contacts
+    include includes/sections/__footer
