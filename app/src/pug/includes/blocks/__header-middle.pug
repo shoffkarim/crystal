@@ -1,10 +1,9 @@
 .header__middle.main-display
   .video-container
     .video-wrapper
-      svg(version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 517.9997559 492.0065002" style="enable-background:new 0 0 517.9997559 492.0065002;" xml:space="preserve")
-        path(class="st0" d="M517.9997559,133.1105042L266.1483765,476.6849976l-11.2271881,15.3215027l-10.8755951-15.4890137 L0,129.2118073L111.9366913,0h299.7236938L517.9997559,133.1105042z")
-        //- video(preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png")
-        //-   source(src="video/video-main.mp4" type="video/mp4")
+      img(src="img/mask.png", alt="alt").mask
+      video(preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png")
+        source(src="video/video-main.mp4" type="video/mp4")
   .text-container
     .image-in-text
       h1.main-h1(style="background: url('img/background-text-main.png')") Крупнейший<br>поставщик<br> стальных труб
