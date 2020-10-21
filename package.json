@@ -1,9 +1,10 @@
 {
-  "name": "assembly",
+  "name": "crystal",
   "version": "1.0.0",
   "description": "",
   "main": "./app/src/js/script.js",
   "scripts": {
+    "gulp": "gulp pug",
     "build": "webpack -p",
     "dev": "webpack -d",
     "devWatch": "webpack -d --watch",
