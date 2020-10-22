@@ -84,3 +84,10 @@ module.exports = {
         contentBase: './'
     }
 };
+
+stylus(str)
+  .set('filename', __dirname + '/src/stylus/style.styl')
+  .define('url', stylus.url({ paths: [__dirname + '/build'] }))
+  .render(function(err, css){
+
+  });
