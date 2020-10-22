@@ -1,6 +1,7 @@
 .header
   background-color #ffffff
   padding-bottom 90px
+  height: 100vh
   &-top
     display flex
     flex-direction row
@@ -11,10 +12,13 @@
   &__middle
     display: flex
     flex-direction row
-    justify-content: center
-    margin-top: 35px
+    justify-content: space-between
+    margin-top: 30px
     .common-text
       max-width: 590px
+      max-width: 589px;
+      margin-left: 100px;
+      margin-top: -103px;
 .nav
   display: flex
   flex-direction: column
@@ -91,10 +95,11 @@
 
 .video-wrapper
   position: relative
-  width: 760px
-  height: 100%
-  overflow hidden
-  z-index 10
+  width: 895px
+  height: 690px
+  overflow: hidden
+  z-index: 10
+  margin-left: -32px
   video
     position absolute
     width: 100%
@@ -102,6 +107,7 @@
     top: 0
     left: 0
     z-index 5
+    object-fit: cover
   img
     position absolute
     width: 100%
@@ -109,3 +115,11 @@
     top: 0
     left: 0
     z-index 7
+    object-fit: cover
+.text-container
+  margin-right auto
+  margin-top: 10px
+.text-img
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index 10
