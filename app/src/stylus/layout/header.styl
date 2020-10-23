@@ -1,7 +1,7 @@
 .header
   background-color #ffffff
   padding-bottom 90px
-  height: 100vh
+  min-height: 100vh
   &-top
     display flex
     flex-direction row
@@ -26,7 +26,7 @@
   align-items: flex-end
   padding-top: 35px
   &-info
-    margin-bottom 30px
+    margin-bottom 24px
     &__list
       display: flex
       flex-direction row
@@ -39,8 +39,12 @@
   &-item
     common-text()
     margin-right: 30px
+    &:last-child
+      margin-right 0
     a
       color: #000000
+    &__tel
+      margin-right 18px
 
 .video
   &-container
@@ -67,8 +71,8 @@
   img
     width: 15px
     position absolute
-    top: 0
-    left: 0
+    top: 3px
+    left: 2px
 
 .header-nav__email
   span

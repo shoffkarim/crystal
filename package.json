@@ -4,7 +4,8 @@
   "description": "",
   "main": "./app/src/js/script.js",
   "scripts": {
-    "gulp": "gulp pug",
+    "gulp-pug": "gulp pug",
+    "gulp-stylus": "gulp stylus",
     "build": "webpack -p",
     "dev": "webpack -d",
     "devWatch": "webpack -d --watch",
@@ -32,6 +33,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
     "mini-css-extract-plugin": "^0.11.0",
     "parcel-bundler": "^1.12.4",
     "postcss": "^7.0.32",
