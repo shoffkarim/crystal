@@ -32,6 +32,12 @@
     justify-content: space-between
     &__item
       margin-bottom 35px
+      a
+        border-bottom 1px solid rgba(255,255,255,0)
+        transition all 0.4s
+        &:hover
+          border-bottom 1px solid rgba(255,255,255,1)
+          transition all 0.4s
       &:last-child
         margin-bottom 0px
 
@@ -110,5 +116,27 @@
 
 
 .developer-copyright__link:hover .developer-copyright__name
-    background-color: #126bc6;
-    color: #ffffff;
+  background-color: #d0e1f4;
+  color: #126bc6;
+  transition-property: color, background-color
+  transition-duration: 0.3s
+  transition-timing-function: ease
+.btn-up
+  position fixed
+  right: 0
+  bottom 120px
+  background-color #257ed8
+  width: 37px
+  height: 37px
+  transition all 0.4s
+  &:hover
+    background-color #3b8bdc
+    transition all 0.4s
+  &::before
+    content: ""
+    background-image url('/app/build/img/arrow-up.png')
+    width: 13px
+    height: 5px
+    position absolute
+    top: 15px
+    left: 12px

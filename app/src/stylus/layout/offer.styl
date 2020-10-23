@@ -33,28 +33,60 @@
       background-color #ffffff
       color: #000000
       padding-right 93px
-      &::before
-        content: ""
-        background-image url('/app/build/img/arrow-black.png')
-        position absolute
-        top: 18px
-        right: 30px
-        width 42px
-        height: 13px
+      transition: all 0.4s
+      &:hover
+        background-color #257ed8
+        color: #ffffff
+        transition: all 0.4s
+        path.line
+          fill: #ffffff
+          transition: all 0.4s
+        path.tre
+          fill: none
+          stroke: #ffffff
+          transition: all 0.4s
+      svg
+        position: absolute;
+        top: 17px;
+        right: 28px;
+      path.line
+        fill: #000000
+        transition: all 0.4s
+      path.tre
+        fill: none
+        stroke: #000000
+        transition: all 0.4s
+
     &__blue
       background-color $blue
       color: #ffffff
       padding-right: 88px
       padding-top: 19px
       padding-bottom 19px
-      &::before
-        content: ""
-        background-image url('/app/build/img/arrow-white.png')
-        position absolute
-        top: 18px
-        right: 30px
-        width 42px
-        height: 13px
+      transition: all 0.4s
+      svg
+        position: absolute;
+        top: 17px;
+        right: 28px;
+      path.line
+        fill: #ffffff
+        transition: all 0.4s
+      path.tre
+        fill: none
+        stroke: #ffffff
+        transition: all 0.4s
+      &:hover
+        background-color #2a83dd
+        color: #ffffff
+        transition: all 0.4s
+        path.line
+          fill: #ffffff
+          transition: all 0.4s
+        path.tre
+          fill: none
+          stroke: #ffffff
+          transition: all 0.4s
+
 .special-offer
   max-width 950px
   width: 100%

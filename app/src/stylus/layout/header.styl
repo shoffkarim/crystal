@@ -41,8 +41,12 @@
     margin-right: 30px
     &:last-child
       margin-right 0
-    a
+    .nav-item__href
       color: #000000
+      transition all 0.2s
+      &:hover
+        color: #126bc6
+        transition all 0.2s
     &__tel
       margin-right 18px
 
@@ -74,16 +78,22 @@
     top: 3px
     left: 2px
 
-.header-nav__email
-  span
-    text-decoration-line: underline
-    text-decoration-color: #333333
-    display inline
+// .header-nav__email
+//   span
+//     text-decoration-line: underline
+//     text-decoration-color: #333333
+//     display inline
+//     &:hover
+//       text-decoration none
+//       transition all 0.4s
 .header-nav__tel
   font-weight 700
-.header-nav__callback
+.header-nav__callback,.header-nav__email
   span
     border-bottom 1px dotted #333333
+    &:hover
+      border-bottom 1px dotted rgba(0,0,0,0)
+      transition all 0.4s
 
 // .image-in-text
 //   position relative
@@ -183,3 +193,37 @@
     color: #ffffff
     background-color #126bc6
     padding-right: 40px
+    transition: all 0.4s
+    &:hover
+      background-color #2a83dd
+      transition: all 0.4s
+.nav-menu
+  .nav-item__href
+    position relative
+    padding-top 3px
+    padding-bottom 3px
+    &::before
+      content: ""
+      background-color #126bc6
+      width: 0
+      height: 1px
+      position absolute
+      top: 0
+      left: 0
+      transition all 0.4s
+    &::after
+      content: ""
+      background-color #126bc6
+      width: 0
+      height: 1px
+      position absolute
+      bottom: 0
+      left: 0
+      transition all 0.4s
+    &:hover
+      &::before
+        width: 100%
+        transition all 0.4s
+      &::after
+        width: 100%
+        transition all 0.4s
