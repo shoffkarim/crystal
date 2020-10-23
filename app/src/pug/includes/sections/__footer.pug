@@ -33,5 +33,27 @@ footer.footer
           a(href="").common-text.common-text__white Контакты
 
 button.btn.btn-up(type='submit')
+.popup-overlay
+.popup.callback
+  button.btn.btn-popup__close(type='submit')
+  p.callback__heading
+  p.callback__text
+  form(action="").callback__form.callback-form
+    .callback-from__wrapper
+      input(type="text" placeholder="Ваше имя")
+      input(type="tel" placeholder="Номер телефона")
+      input(type="text" placeholder="E-mail")
+    .callback-form__wrapper
+      textarea(name="", cols="30", rows="10" placeholder="Сообщение")
+    .callback-bottom
+      .pd-checkbox
+        input(type="checkbox")
+        span.fake-checkbox
+        p.pd
+          span Даю согласие на обработку
+          a(href="") персональных данных
+      button.btn.btn-form(type='submit') Отправить
+
+
 
 
