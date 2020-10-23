@@ -28,12 +28,33 @@
     padding: 17px 30px
     position relative
     z-index 2
+    letter-spacing: 1px
     &__white
       background-color #ffffff
       color: #000000
+      padding-right 93px
+      &::before
+        content: ""
+        background-image url('/app/build/img/arrow-black.png')
+        position absolute
+        top: 18px
+        right: 30px
+        width 42px
+        height: 13px
     &__blue
       background-color $blue
       color: #ffffff
+      padding-right: 88px
+      padding-top: 19px
+      padding-bottom 19px
+      &::before
+        content: ""
+        background-image url('/app/build/img/arrow-white.png')
+        position absolute
+        top: 18px
+        right: 30px
+        width 42px
+        height: 13px
 .special-offer
   max-width 950px
   width: 100%
@@ -53,9 +74,9 @@
   justify-content: center
   align-items: center
   padding-top 95px
-  padding-bottom 96px
-  padding-left 120px
-  padding-right: 102px
+  padding-bottom 92px
+  padding-left: 108px
+  padding-right: 87px
   &__heading
     margin-bottom 17px
   &__text

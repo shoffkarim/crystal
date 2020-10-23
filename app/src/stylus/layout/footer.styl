@@ -20,7 +20,7 @@
     justify-content: space-between
     .tel a
       font-family "Inter", sans-serif
-      font-size 15px
+      font-size 18px
       line-height 22px
       font-weight 700
       color: #ffffff
@@ -39,3 +39,76 @@
   margin-bottom 20px
   &:last-child
     margin-bottom 0px
+.contacts-list__item.tel
+  position relative
+  padding-left: 30px
+  &::before
+    content: ""
+    background-image url('/app/build/img/phone-white.png')
+    background-repeat no-repeat
+    position absolute
+    top: 4px
+    left: 0
+    width: 13px
+    height: 13px
+.contacts-list__item.address
+  position relative
+  padding-left: 30px
+  &::before
+    content: ""
+    background-image url('/app/build/img/pin-white.png')
+    background-repeat no-repeat
+    position absolute
+    top: 2px
+    left: 0
+    width: 13px
+    height: 16px
+.contacts-list__item.email
+  position relative
+  padding-left: 30px
+  &::before
+    content: ""
+    background-image url('/app/build/img/mail-white.png')
+    background-repeat no-repeat
+    position absolute
+    top: 2px
+    left: 0
+    width: 16px
+    height: 13px
+.developer-copyright
+  display inline-block
+  margin-bottom 7px
+.developer-copyright__link
+  cursor: pointer
+.developer-copyright__name
+  display: inline-block
+  padding: 5px 7px
+  font-family: "Arial"
+  font-size: 12px
+  font-weight: 800
+  letter-spacing: 1px
+  color: #126bc6
+  text-transform: uppercase
+  background-color: #ffffff
+  transition-property: color, background-color
+  transition-duration: 0.3s
+  transition-timing-function: ease
+
+.developer-copyright__link + .developer-copyright__hint
+  margin-left: 10px
+
+.developer-copyright__hint
+  display: inline-block
+  position: relative
+  top: 5px
+  font-family: "Verdana"
+  font-size: 9px
+  line-height: 12px
+  letter-spacing: 2px
+  color: #95bde0
+  text-transform: uppercase
+
+
+.developer-copyright__link:hover .developer-copyright__name
+    background-color: #126bc6;
+    color: #ffffff;

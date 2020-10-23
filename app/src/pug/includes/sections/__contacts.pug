@@ -6,7 +6,7 @@ section.section.contacts
         ul.buildings-list
           li.buildings-list__item.building
             p.building-name Офис
-            p.building-address.common-text.common-text__black Челябинск, ул. Кулибина, 5, оф. 407
+            p.building-address.common-text.common-text__black(style="max-width:230px") Челябинск, ул. Кулибина, 5, оф. 407
             .building-phone__wrapper
               a(href="").building-phone.common-text.common-text__black +7 (351) 267-45-96
               a(href="").building-phone.common-text.common-text__black +7 (351) 267-45-63
@@ -21,5 +21,8 @@ section.section.contacts
             p.building-address.common-text.common-text__black Челябинск, ул. Героев Танкограда 17 «П» (ЗАО ЦПТК ЧМС)
             .building-phone__wrapper
               a(href="").building-phone.common-text.common-text__black +7 (951) 489-99-95
-      .map
+      .map-container
+        .map-wrapper
+          img(src="img/crystal-shape.svg", alt="alt").mask
+          .map(id="map" style="width:1500px; height: 1200px")
     include ../blocks/__advantages

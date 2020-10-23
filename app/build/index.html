@@ -11,7 +11,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"><script src="https://api-maps.yandex.ru/2.1/?apikey=49eed181-7d42-49d6-b4f7-a8fec50cdba6&lang=ru_RU" type="text/javascript">
+</script>
   </head>
   <body class="index">
     <header class="header">
@@ -62,6 +63,14 @@
             <p class="common-text common-text__black">Сфера деятельности компании АО ТД «Кристалл» – оптовая и розничная торговля со склада трубами из разных марок стали. Наша задача — быть главным связующим элементом между производителями — отечественными и зарубежными и потребителями России, Беларуси и Казахстана.</p>
           </div>
         </div>
+        <div class="banner special-banner">
+          <p class="special-banner__text">Специальное предложение</p><img src="img/percent.png" alt="специальное предложение">
+        </div>
+        <div class="cookie cookie__open">
+          <p class="cookie__text common-text common-text__black"><span>Сайт использует</span><a class="common-text" href=""> файлы «cookie»</a><span class="common-text common-text__black"> целью персонализации сервисов и повышения удобства пользования веб-сайтом.</span></p>
+          <button class="btn btn-cookie btn-cookie__disagree" type="submit">Не согласен</button>
+          <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
+        </div>
       </div>
     </header>
     <main>
@@ -78,7 +87,7 @@
               <p class="common-text common-text__white catalog-text">Доступные цены, выгодные условия сотрудничества и качественная продукция – то, что помогает нашим партнерам создавать и ремонтировать технику, оборудование, промышленные и гражданские объекты.</p>
             </div>
             <div class="curcle-link"><a class="curcle-link__href" href=""><span class="underline">Скачать прайс</span></a><span>.PDF, 1.1 МБ</span>
-              <div class="arrow"></div>
+              <div class="arrow"><img src="img/arrow-white.png" alt="стрелка"></div>
             </div>
           </div>
           <div class="catalog-block">
@@ -110,8 +119,8 @@
               <h2 class="common-h2 company-heading">Наша компания поддерживает самые высокие стандарты обслуживания</h2>
               <p class="common-text common-text__white company-text">Для этого у нас есть необходимый опыт, подготовленные сотрудники, честное и открытое отношение к партнерам.</p>
             </div>
-            <div class="curcle-link"><a class="curcle-link__href" href=""><span class="underline">Подробнее</span><span class="underline">О компании</span></a>
-              <div class="arrow"></div>
+            <div class="curcle-link double-underline"><a class="curcle-link__href" href=""><span class="underline">Подробнее</span></a><a class="curcle-link__href" href=""><span class="underline">О компании</span></a>
+              <div class="arrow"><img src="img/arrow-white.png" alt="стрелка"></div>
             </div>
           </div>
           <div class="partners">
@@ -141,7 +150,7 @@
               <ul class="buildings-list">
                 <li class="buildings-list__item building">
                   <p class="building-name">Офис</p>
-                  <p class="building-address common-text common-text__black">Челябинск, ул. Кулибина, 5, оф. 407</p>
+                  <p class="building-address common-text common-text__black" style="max-width:230px">Челябинск, ул. Кулибина, 5, оф. 407</p>
                   <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-96</a><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-63</a><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-98</a></div>
                 </li>
                 <li class="buildings-list__item building">
@@ -156,7 +165,11 @@
                 </li>
               </ul>
             </div>
-            <div class="map"></div>
+            <div class="map-container">
+              <div class="map-wrapper"><img class="mask" src="img/crystal-shape.svg" alt="alt">
+                <div class="map" id="map" style="width:1500px; height: 1200px"></div>
+              </div>
+            </div>
           </div>
           <div class="advantages"><img class="advantages-back" src="img/contacts-tubes.jpg" alt="alt">
             <p class="advantages-heading">Преимуществом нашей компании является владение оперативной информацией о производстве</p>
@@ -187,14 +200,14 @@
       <div class="container">
         <div class="footer-rights footer-section rights">
           <p class="rights-company common-text common-text__white">© АО ТД «Кристалл», 2020</p>
-          <p class="dextra">Dextra</p>
+          <div class="developer-copyright"><a class="developer-copyright__link" href="https://www.dextra.ru/" target="_blank" title="Интернет-агентство Dextra" alt="Интернет-агентство Dextra"><span class="developer-copyright__name">Dextra</span></a><span class="developer-copyright__hint">Разработка<br>сайта</span></div>
         </div>
         <div class="footer-contacts footer-section">
           <ul class="footer-contacts__list contacts-list">
             <li class="contacts-list__item tel"><a class="common-text common-text__white" href="">8-800-700-7443</a>
               <p class="common-text common-text__white">Звонок бесплатный</p>
             </li>
-            <li class="contacts-list__item address"><a class="common-text common-text__white" href="">Челябинск, ул. Кулибина, д. 5, оф. 407</a></li>
+            <li class="contacts-list__item address"><a class="common-text common-text__white" href="">Челябинск,<br> ул. Кулибина, д. 5, оф. 407</a></li>
             <li class="contacts-list__item email"><a class="common-text common-text__white" href="">tdkristall@bk.ru</a></li>
           </ul>
         </div>
@@ -215,5 +228,14 @@
       </div>
     </footer>
     <button class="btn btn-up" type="submit">Up</button>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+          var myMap = new ymaps.Map("map", {
+              center: [55.76, 37.64],
+              zoom: 7
+          });
+      }
+  </script>
   </body>
 </html>
