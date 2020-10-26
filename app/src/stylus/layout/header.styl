@@ -57,6 +57,7 @@
     margin-right 40px
   &-wrapper
     margin: 0 auto
+    animation: videoOpening 2s ease-in-out
 
 .main-h1
   font-family "Inter"
@@ -168,9 +169,10 @@
   padding 30px 40px
   z-index 100
   &__open
-    position absolute
-    bottom: -30px
-    left: 0
+    position fixed
+    bottom: 90px
+    left: 100px
+    z-index 999
   &__text
     max-width: 440px
   a
@@ -317,3 +319,43 @@
     height: 284px;
   .text-container svg
     width: 300px
+
+.img-in-text
+  animation: imgInText infinite 5s ease-in-out backwards
+
+
+.opening
+  .header-top
+    position fixed
+    top: -200px
+    opacity: 0
+    visibility hidden
+    transition: opacity 1s, top 1s
+    margin-bottom: 200px
+  .text-container
+    opacity 0
+    transition: opacity 2s
+  .cookie
+    opacity 0
+    transition: opacity 3s
+.catalog.opening
+  padding-top 500px
+  opacity 0
+  transition: all 1s
+.company.opening
+  padding-top 500px
+  opacity 0
+  transition: all 1s
+.header-top
+  position relative
+  top: 0px
+  opacity: 1
+  visibility visible
+  margin-bottom 0
+  transition: opacity 1s, top 1s
+.text-container
+  opacity 1
+  transition: opacity 2s
+.cookie
+  opacity 1
+  transition: opacity 3s

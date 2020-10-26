@@ -315,6 +315,78 @@ button {
     max-width: 300px;
   }
 }
+@-moz-keyframes imgInText {
+  0% {
+    width: 1020px;
+  }
+  100% {
+    width: 1220px;
+  }
+}
+@-webkit-keyframes imgInText {
+  0% {
+    width: 1020px;
+  }
+  100% {
+    width: 1220px;
+  }
+}
+@-o-keyframes imgInText {
+  0% {
+    width: 1020px;
+  }
+  100% {
+    width: 1220px;
+  }
+}
+@keyframes imgInText {
+  0% {
+    width: 1020px;
+  }
+  100% {
+    width: 1220px;
+  }
+}
+@-moz-keyframes videoOpening {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 715px;
+    height: 724px;
+  }
+}
+@-webkit-keyframes videoOpening {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 715px;
+    height: 724px;
+  }
+}
+@-o-keyframes videoOpening {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 715px;
+    height: 724px;
+  }
+}
+@keyframes videoOpening {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 715px;
+    height: 724px;
+  }
+}
 .header {
   background-color: #fff;
   padding-bottom: 90px;
@@ -389,6 +461,7 @@ button {
 }
 .video-wrapper {
   margin: 0 auto;
+  animation: videoOpening 2s ease-in-out;
 }
 .main-h1 {
   font-family: "Inter";
@@ -495,9 +568,10 @@ button {
   z-index: 100;
 }
 .cookie__open {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
+  position: fixed;
+  bottom: 90px;
+  left: 100px;
+  z-index: 999;
 }
 .cookie__text {
   max-width: 440px;
@@ -691,6 +765,51 @@ button {
     width: 300px;
   }
 }
+.img-in-text {
+  animation: imgInText infinite 5s ease-in-out backwards;
+}
+.opening .header-top {
+  position: fixed;
+  top: -200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, top 1s;
+  margin-bottom: 200px;
+}
+.opening .text-container {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.opening .cookie {
+  opacity: 0;
+  transition: opacity 3s;
+}
+.catalog.opening {
+  padding-top: 500px;
+  opacity: 0;
+  transition: all 1s;
+}
+.company.opening {
+  padding-top: 500px;
+  opacity: 0;
+  transition: all 1s;
+}
+.header-top {
+  position: relative;
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 0;
+  transition: opacity 1s, top 1s;
+}
+.text-container {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.cookie {
+  opacity: 1;
+  transition: opacity 3s;
+}
 .about-section {
   position: relative;
   padding-left: 100px;
@@ -708,6 +827,8 @@ button {
 }
 .catalog {
   padding-top: 182px;
+  opacity: 1;
+  transition: all 1s;
 }
 .catalog-heading {
   color: #fff;
@@ -1079,6 +1200,8 @@ button {
 }
 .company {
   padding-top: 185px;
+  opacity: 1;
+  transition: all 1s;
 }
 .company .container {
   position: relative;
@@ -1714,6 +1837,15 @@ button {
   .footer-section {
     width: 50%;
   }
+}
+.btn-up {
+  opacity: 1;
+  visibility: visible;
+}
+.btn-up__hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s;
 }
 .popup-overlay {
   display: block;
