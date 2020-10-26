@@ -108,12 +108,12 @@
 //     min-blend-mode: overlay
 
 .video-wrapper
-  position: relative
-  width: 895px
-  height: 690px
-  overflow: hidden
-  z-index: 10
-  margin-left: -32px
+  position: relative;
+  width: 715px;
+  height: 724px;
+  overflow: hidden;
+  z-index: 10;
+  margin-left: 52px;
   video
     position absolute
     width: 100%
@@ -122,6 +122,9 @@
     left: 0
     z-index 5
     object-fit: cover
+    -webkit-clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+    clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+    position: relative;
   img
     position absolute
     width: 100%
@@ -227,3 +230,52 @@
       &::after
         width: 100%
         transition all 0.4s
+
+@media screen and (max-width: 1760px)
+  .video-wrapper
+    margin-left 0
+  .text-container
+    svg
+      width: 650px
+  .header__middle .common-text
+    margin-left: 84px
+@media screen and (max-width: 1550px)
+  .video-wrapper
+    width: 515px
+    height: 487px
+    margin-left: 48px
+  .header__middle
+    margin-top: 0
+  .header-top__logo
+    width: 100px
+  .video-container
+    max-width: none
+    min-width: auto
+  .video-container
+    margin-right: 13px
+  .text-img
+    font-size 98px
+  .header__middle .common-text
+    max-width: 490px
+    margin-top: -168px
+  .banner.special-banner
+    bottom -38px
+  .special-banner__text
+    color: #000000
+  .cookie
+    padding: 20px 30px
+  .cookie__open
+    bottom -35px
+
+@media screen and (max-width: 1365px)
+  .video-wrapper
+    width: 350px
+    height: 331px
+  .text-container svg
+    width: 450px
+    height: 280px
+  .header__middle .common-text
+    margin-top: -95px
+    margin-left: 60px
+  .banner.special-banner
+    bottom: -70px

@@ -131,12 +131,11 @@
   position relative
 .map-wrapper
   position: absolute
-  width: 1221px
+  width: 100%
   height: 909px
   overflow: hidden
   z-index: 10
   top: 0
-  right: -133px
 .map-wrapper .mask
   position: absolute;
   width: 100%;
@@ -148,6 +147,40 @@
 .map
   position absolute
   top: 0;
-  left: 0;
+  right: 0px;
   z-index: 5;
   object-fit: cover;
+  -webkit-clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+  clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+  position: relative;
+  width: 985px;
+  height: 925px;
+  background: $blue
+  margin-left auto
+.ymaps-2-1-77-controls__control
+  left: 110px !important
+.ymaps-2-1-77-controls__toolbar
+  width: 62% !important
+  left: 188px !important
+@media screen and (max-width: 1550px)
+  .contacts-wrapper
+    padding-top 61px
+  .building
+    margin-bottom 27px
+  .map
+    width: 985px !important
+    height: 950px !important
+  .map-wrapper
+    right: -50px
+  .advantages
+    margin-top: 40px
+    padding: 53px 56px
+    padding-bottom 87px
+  .advantages-wrapper
+    max-width: 565px
+    padding-top 9px
+  .advantages-item
+    margin-right: 97px
+    margin-bottom 32px
+  .contacts
+    padding-bottom 41px

@@ -42,7 +42,7 @@
         </div>
         <div class="header__middle main-display">
           <div class="video-container">
-            <div class="video-wrapper"><img class="mask" src="img/crystal-shape.svg" alt="alt">
+            <div class="video-wrapper">
               <video preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png">
                 <source src="video/video-main.mp4" type="video/mp4">
               </video>
@@ -53,9 +53,9 @@
               <defs>
                 <mask id="LetMask">
                   <rect x="0" y="0" width="700px" height="100%" fill="#black"></rect>
-                  <text class="text-img" font-size="100px" font-family="Inter" x="125" y="169" fill="white">Крупнейший</text>
-                  <text class="text-img" font-size="100px" font-family="Inter" x="125" y="268" fill="white">поставщик</text>
-                  <text class="text-img" font-size="100px" font-family="Inter" x="125" y="367" fill="white">Стальных труб</text>
+                  <text class="text-img first" font-size="100px" font-family="Inter" x="125" y="169" fill="white">Крупнейший</text>
+                  <text class="text-img second" font-size="100px" font-family="Inter" x="125" y="268" fill="white">поставщик</text>
+                  <text class="text-img third" font-size="100px" font-family="Inter" x="125" y="367" fill="white">Стальных труб</text>
                 </mask>
               </defs>
               <image xlink:href="img/background-text-main.png" width="1020px" height="760px" mask="url(#LetMask)"></image>
@@ -171,8 +171,8 @@
               </ul>
             </div>
             <div class="map-container">
-              <div class="map-wrapper"><img class="mask" src="img/crystal-shape.svg" alt="alt">
-                <div class="map" id="map" style="width:1500px; height: 1200px"></div>
+              <div class="map-wrapper">
+                <div class="map" id="map" style="width:985px; height: 925px"></div>
               </div>
             </div>
           </div>
@@ -233,28 +233,46 @@
       </div>
     </footer>
     <button class="btn btn-up" type="submit"></button>
-    <div class="popup-overlay"></div>
-    <div class="popup callback">
-      <button class="btn btn-popup__close" type="submit"></button>
-      <p class="callback__heading"></p>
-      <p class="callback__text"></p>
+    <div class="popup-overlay popup--hidden"></div>
+    <div class="popup callback popup--hidden">
+      <button class="btn btn-popup__close" type="submit"><img src="/app/build/img/popup-close.png" alt="закрыть"></button>
+      <p class="callback__heading common-text common-text__black">Заказать обратный звонок</p>
+      <p class="callback__text common-text common-text__black"><span>Пожалуйста, заполните поля ниже, чтобы связаться с нами.</span></p>
+      <p class="callback__text common-text common-text__black"><span class="star">*</span><span> — поля со звёздочкой обязательны для заполнения.</span></p>
       <form class="callback__form callback-form" action="">
-        <div class="callback-from__wrapper">
-          <input type="text" placeholder="Ваше имя">
-          <input type="tel" placeholder="Номер телефона">
-          <input type="text" placeholder="E-mail">
-        </div>
-        <div class="callback-form__wrapper">
-          <textarea name="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+        <div class="callback-form__container">
+          <div class="callback-form__wrapper">
+            <div class="callback-form__block">
+              <input class="common-text common-text__black" type="text" placeholder="Ваше имя">
+              <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
+            </div>
+            <div class="callback-form__block">
+              <input class="common-text common-text__black" type="tel" placeholder="Номер телефона">
+              <label class="common-text common-text__black"><span>Номер телефона</span><span class="star">*</span></label>
+            </div>
+            <div class="callback-form__block">
+              <input class="common-text common-text__black" type="text" placeholder="E-mail">
+              <label class="common-text common-text__black"><span>E-mail</span></label>
+            </div>
+          </div>
+          <div class="callback-form__wrapper">
+            <div class="callback-form__block">
+              <textarea class="common-text common-text__black" name="" placeholder="Сообщение"></textarea>
+              <label class="common-text common-text__black"><span>Сообщение</span></label>
+            </div>
+          </div>
         </div>
         <div class="callback-bottom">
           <div class="pd-checkbox">
-            <input type="checkbox"><span class="fake-checkbox"></span>
-            <p class="pd"><span>Даю согласие на обработку</span><a href="">персональных данных</a></p>
+            <label for="checkbox-pd">
+              <input type="checkbox" id="checkbox-pd"><span class="fake-checkbox"></span>
+              <p class="pd common-text common-text__black"><span>Даю согласие на обработку</span><a href="">персональных данных</a></p>
+            </label>
           </div>
           <button class="btn btn-form" type="submit">Отправить</button>
         </div>
       </form>
+      <script src="js/s.js"></script>
     </div>
   </body>
 </html>

@@ -33,26 +33,49 @@ footer.footer
           a(href="").common-text.common-text__white Контакты
 
 button.btn.btn-up(type='submit')
-.popup-overlay
-.popup.callback
+.popup-overlay.popup--hidden
+.popup.callback.popup--hidden
   button.btn.btn-popup__close(type='submit')
-  p.callback__heading
-  p.callback__text
+    img(src="/app/build/img/popup-close.png", alt="закрыть")
+  p.callback__heading.common-text.common-text__black Заказать обратный звонок
+  p.callback__text.common-text.common-text__black
+    span Пожалуйста, заполните поля ниже, чтобы связаться с нами.
+  p.callback__text.common-text.common-text__black
+    span.star *
+    span  — поля со звёздочкой обязательны для заполнения.
   form(action="").callback__form.callback-form
-    .callback-from__wrapper
-      input(type="text" placeholder="Ваше имя")
-      input(type="tel" placeholder="Номер телефона")
-      input(type="text" placeholder="E-mail")
-    .callback-form__wrapper
-      textarea(name="", cols="30", rows="10" placeholder="Сообщение")
+    .callback-form__container
+      .callback-form__wrapper
+        .callback-form__block
+          input.common-text.common-text__black(type="text" placeholder="Ваше имя")
+          label.common-text.common-text__black
+            span Ваше имя
+            span.star *
+        .callback-form__block
+          input.common-text.common-text__black(type="tel" placeholder="Номер телефона")
+          label.common-text.common-text__black
+            span Номер телефона
+            span.star *
+        .callback-form__block
+          input.common-text.common-text__black(type="text" placeholder="E-mail")
+          label.common-text.common-text__black
+            span E-mail
+      .callback-form__wrapper
+        .callback-form__block
+          textarea.common-text.common-text__black(name="" placeholder="Сообщение")
+          label.common-text.common-text__black
+            span Сообщение
     .callback-bottom
       .pd-checkbox
-        input(type="checkbox")
-        span.fake-checkbox
-        p.pd
-          span Даю согласие на обработку
-          a(href="") персональных данных
+        label(for="checkbox-pd")
+          input(type="checkbox" id="checkbox-pd")
+          span.fake-checkbox
+          p.pd.common-text.common-text__black
+            span Даю согласие на обработку
+            a(href="") персональных данных
       button.btn.btn-form(type='submit') Отправить
+
+  script(src="js/s.js")
 
 
 

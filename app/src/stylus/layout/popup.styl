@@ -1,0 +1,143 @@
+.popup
+  &-overlay
+    display: block
+    width: 100%
+    height 100%
+    position fixed
+    top: 0
+    left: 0
+    background-color #0660bf
+    z-index 100
+.popup
+  z-index 120
+.popup.callback
+  width: 860px
+  height: auto
+  display: block
+  position fixed
+  top: 260px
+  left: calc(50% - 430px)
+  background-color #ffffff
+  padding-top 50px
+  padding-right: 80px
+  padding-bottom 60px
+  padding-left: 80px
+
+.callback
+  &__heading
+    font-family "Inter", sans-serif
+    font-weight 700
+    font-size 24px
+    line-height 44px
+    color: #000000
+    margin-bottom 10px
+    text-align center
+  &__text
+    text-align center
+    .star
+      color: #126bc6
+  &__form
+    margin-top: 45px
+  &-bottom
+    margin-top 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.callback-form
+  &__container
+    display flex
+    flex-direction row
+    justify-content: space-between
+  &__wrapper
+    display flex
+    flex-direction column
+    justify-content: flex-start
+    align-items: flex-start
+    max-width: 340px
+    width: 100%
+    input
+      background-color #f1f7fd
+      border 1px solid #d0e1f4
+      padding: 12px 19px
+      margin-bottom 20px
+
+      width: 100%
+      &:last-child
+        margin-bottom 0
+    textarea
+      background-color #f1f7fd
+      border 1px solid #d0e1f4
+      padding: 12px 19px
+      width: 100%
+      height: 100%
+      resize none
+  &__block
+    position relative
+    display block
+    width: 100%
+    height: 100%
+    label
+      position absolute
+      top: 13px
+      left: 20px
+      .star
+        color #126bc6
+
+
+
+.btn-popup__close
+  position absolute
+  top: -38px;
+  right: -39px;
+  background-color #0660bf
+  opacity 1
+  transition: all 0.4s
+  &:hover
+    opacity 0.6
+    transition: all 0.4s
+
+.btn-form
+  display: block
+  background-color #0660bf
+  font-family "Inter", sans-serif
+  font-weight 700
+  font-size 11px
+  line-height 29px
+  text-transform uppercase
+  color: #ffffff
+  padding: 10px 40px
+  letter-spacing: 1px
+.pd
+  a
+    color #126bc6
+    text-decoration-line: underline
+    text-decoration-color: #d0e1f4
+.pd-checkbox
+  label
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  input
+    display none
+  .fake-checkbox
+    display block
+    width: 17px
+    height: 17px
+    border 1px solid #d0e1f4
+    background-color #f1f7fd
+    position relative
+    margin-right 10px
+    &:before
+      content: ""
+      background-image url('/app/build/img/checkbox-arrow.png')
+      background-repeat no-repeat
+      width: 11px
+      height 8px
+      position absolute
+      top: 4px
+      left: 1px
+
+.popup.popup--hidden,
+.popup-overlay.popup--hidden
+  display: none
