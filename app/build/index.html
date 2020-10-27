@@ -10,7 +10,7 @@
     <title>Кристалл</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"><script src="https://api-maps.yandex.ru/2.1/?apikey=49eed181-7d42-49d6-b4f7-a8fec50cdba6&lang=ru_RU" type="text/javascript">
 </script>
   </head>
@@ -266,7 +266,7 @@
               <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
             </div>
             <div class="callback-form__block">
-              <input class="js-anim js-valid common-text common-text__black" type="tel" data-req="true">
+              <input class="js-anim js-valid common-text common-text__black tel-mask" type="tel" data-req="true">
               <label class="common-text common-text__black"><span>Номер телефона</span><span class="star">*</span></label>
             </div>
             <div class="callback-form__block">
@@ -296,7 +296,8 @@
       <p class="cookie__text common-text common-text__black"><span>Сайт использует</span><a class="common-text" href=""> файлы «cookie»</a><span class="common-text common-text__black"> целью персонализации сервисов и повышения удобства пользования веб-сайтом.</span></p>
       <button class="btn btn-cookie btn-cookie__disagree" type="submit">Не согласен</button>
       <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
-      <script src="js/s.js"></script>
     </div>
+    <script src="js/imask.js"></script>
+    <script src="js/s.js"></script>
   </body>
 </html>

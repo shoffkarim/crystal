@@ -12,7 +12,6 @@ if (document.documentElement.clientWidth < 1550) {
   textImgFirst.setAttribute("y", "102");
   textImgSecond.setAttribute("y", "196");
   textImgThird.setAttribute("y", "290");
-  console.log(textImgFirst.y);
 }
 
 if (document.documentElement.clientWidth < 767) {
@@ -128,3 +127,11 @@ btnSubmit.addEventListener('click', function (e) {
     }
   });
 });
+
+// mask ======
+let element = document.querySelector('.tel-mask');
+let maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+// eslint-disable-next-line no-undef
+let mask = IMask(element, maskOptions);

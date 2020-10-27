@@ -319,32 +319,44 @@ button {
   0% {
     width: 1020px;
   }
-  100% {
+  50% {
     width: 1220px;
+  }
+  100% {
+    width: 1020px;
   }
 }
 @-webkit-keyframes imgInText {
   0% {
     width: 1020px;
   }
-  100% {
+  50% {
     width: 1220px;
+  }
+  100% {
+    width: 1020px;
   }
 }
 @-o-keyframes imgInText {
   0% {
     width: 1020px;
   }
-  100% {
+  50% {
     width: 1220px;
+  }
+  100% {
+    width: 1020px;
   }
 }
 @keyframes imgInText {
   0% {
     width: 1020px;
   }
-  100% {
+  50% {
     width: 1220px;
+  }
+  100% {
+    width: 1020px;
   }
 }
 @-moz-keyframes videoOpening {
@@ -829,7 +841,7 @@ button {
   width: 0;
   height: 1px;
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   transition: all 0.4s;
 }
@@ -1909,7 +1921,7 @@ button {
     height: 950px !important;
   }
   .map-wrapper {
-    right: -50px;
+    right: -39px;
   }
   .advantages {
     margin-top: 40px;
