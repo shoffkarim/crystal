@@ -81,9 +81,44 @@
     .curcle-link__href
       border-bottom 1px solid rgba(255,255,255,0)
       transition all 0.4s
-
+    .arrow img
+      animation: arrowLink infinite 1s ease-in-out
+    .arrow
+      &::before
+        background-color #2a83dd
+        transition: all 0.4s
+      &::after
+        background-color #2a83dd
+        transition: all 0.4s
 .arrow
   margin-top: 18px
+  position relative
+  width: 44px
+  img
+    position absolute
+    top: 0
+    left: 0
+    z-index 5
+  &::before
+    content: ""
+    background-color #126bc6
+    width: 50px
+    height: 30px
+    position absolute
+    top: 0
+    right: -50px
+    z-index 10
+    transition: all 0.4s
+  &::after
+    content: ""
+    background-color #126bc6
+    width: 50px
+    height: 30px
+    position absolute
+    top: 0
+    left: -50px
+    z-index 10
+    transition: all 0.4s
 .catalog .container
   position relative
 

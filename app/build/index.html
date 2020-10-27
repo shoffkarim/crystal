@@ -274,5 +274,99 @@
       <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
       <script src="js/s.js"></script>
     </div>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+          var myMap = new ymaps.Map("map", {
+              center: [55.160537, 61.387527],
+              zoom: 11
+          });
+        var HintLayout = ymaps.templateLayoutFactory.createClass( '<div class="balloon-img"><img src="/app/build/img/office1.jpg" height="140" width="300">', {
+                // Определяем метод getShape, который
+                // будет возвращать размеры макета хинта.
+                // Это необходимо для того, чтобы хинт автоматически
+                // сдвигал позицию при выходе за пределы карты.
+                getShape: function () {
+                    var el = this.getElement(),
+                        result = null;
+                    if (el) {
+                        var firstChild = el.firstChild;
+                        result = new ymaps.shape.Rectangle(
+                            new ymaps.geometry.pixel.Rectangle([
+                                [500, 500],
+                                [firstChild.offsetWidth, firstChild.offsetHeight]
+                            ])
+                        );
+                    }
+                    return result;
+                }
+            }
+        );
+        var myPlacemar1 = new ymaps.Placemark([55.232720, 61.318723], {
+            hintContent: 'Склад №1',
+            iconContent: 'Склад &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;№1'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            hintLayout: HintLayout,
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: '/app/build/img/Pin-stock.png',
+            // Размеры метки.
+            iconImageSize: [82, 79],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [19, 15],
+        });
+        var myPlacemar2 = new ymaps.Placemark([55.226806, 61.437336], {
+            hintContent: 'Склад №2',
+            iconContent: 'Склад &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;№2'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            hintLayout: HintLayout,
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: '/app/build/img/Pin-stock.png',
+            // Размеры метки.
+            iconImageSize: [82, 79],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [19, 15],
+        });
+
+        var m = new ymaps.Placemark([55.173262, 61.474796], {
+            // Зададим содержимое заголовка балуна.
+            //balloonContentHeader: '',
+        // Зададим содержимое основной части балуна.
+            //balloonContentBody: '<div class="balloon-img"><img src="/app/build/img/office1.jpg" height="340" width="505">',
+        // Зададим содержимое нижней части балуна.
+            //balloonContentFooter: '',
+        // Зададим содержимое всплывающей подсказки.
+            // hintContent: '<div class="balloon-img"><img src="/app/build/img/office1.jpg" height="340" width="505">'
+
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            hintLayout: HintLayout,
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: '/app/build/img/Pin-office.svg',
+            // Размеры метки.
+            iconImageSize: [82, 79],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [15, 15],
+        });
+        myMap.geoObjects
+          .add(myPlacemar1)
+          .add(myPlacemar2)
+          .add(m);
+        //m.balloon.open();
+      }
+  </script>
   </body>
 </html>

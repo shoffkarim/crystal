@@ -151,6 +151,10 @@
   flex-direction row
   justify-content: flex-end
   align-items: center
+  &:hover
+    img
+      animation: rotateY infinite 2s
+
 .special-banner__text
   font-family "Inter", sans-serif
   font-weight 700
@@ -163,16 +167,18 @@
   margin-right 10px
   letter-spacing: 1px
 .cookie
-  display: flex
   flex-direction row
   background-color #f1f7fd
   padding 30px 40px
   z-index 100
+  display none
   &__open
     position fixed
     bottom: 90px
     left: 100px
     z-index 999
+    visibility visible
+    display flex
   &__text
     max-width: 440px
   a
