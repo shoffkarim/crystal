@@ -5,23 +5,26 @@
     height 100%
     position fixed
     top: 0
-    left: 0
+    right: 0
     background-color #0660bf
     z-index 100
+    transition all 1s
 .popup
   z-index 120
 .popup.callback
   width: 860px
+  opacity 1
   height: auto
   display: block
   position fixed
   top: 260px
-  left: calc(50% - 430px)
+  right: calc(50% - 430px)
   background-color #ffffff
   padding-top 50px
   padding-right: 80px
   padding-bottom 60px
   padding-left: 80px
+  transition opacity 0.4s 0.6s
 
 .callback
   &__heading
@@ -138,6 +141,41 @@
       top: 4px
       left: 1px
 
-.popup.popup--hidden,
+.popup.callback.popup--hidden
+  opacity 0
+  transition: all 0.4s
 .popup-overlay.popup--hidden
-  display: none
+  width: 0%
+  transition: all 1s
+@media screen and (max-width: 1365px)
+  .popup.callback
+    top: 100px
+@media screen and (max-width: 1000px)
+  .popup.callback
+    width: 720px;
+    right: calc(50% - 360px);
+  .callback-form__container
+    flex-direction column
+  .callback-form__wrapper
+    max-width: none
+@media screen and (max-width: 868px)
+  .popup.callback
+    width: 650px;
+    right: calc(50% - 325px);
+@media screen and (max-width: 767px)
+  .popup.callback
+    width: 550px;
+    right: calc(50% - 275px);
+  .callback-bottom
+    flex-direction column
+  .btn-form
+    margin-top 20px
+@media screen and (max-width: 600px)
+  .popup.callback
+    width: 400px;
+    right: calc(50% - 200px);
+    padding: 25px
+@media screen and (max-width: 600px)
+  .popup.callback
+    width: 300px;
+    right: calc(50% - 150px);

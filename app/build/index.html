@@ -27,6 +27,7 @@
                 <li class="info-list__item nav-item nav-item__tel"><a class="nav-item__href header-nav__tel" href="">8-800-700-7443<img src="img/Phone.svg" alt="телефон"></a></li>
                 <li class="info-list__item nav-item"><a class="nav-item__href header-nav__callback" href=""><span>Обратный звонок</span></a></li>
               </ul>
+              <button class="nav__button js-burger" type="button" aria-label="открыть мобильное меню"><span class="nav__button-meat"></span></button>
             </div>
             <div class="nav-menu">
               <ul class="nav-menu__list nav-list">
@@ -39,6 +40,29 @@
               </ul>
             </div>
           </nav>
+        </div>
+        <div class="burger-menu js-menu">
+          <div class="burger-close js-burger__close"><img src="img/popup-close.png" alt="закрыть меню"></div>
+          <div class="burger-container">
+            <div class="nav-info">
+              <ul class="nav-info__list info-list">
+                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__address" href="">Челябинск, ул. Кулибина, д.5, оф 407<img src="img/Pin.svg" alt="адрес"></a></li>
+                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__email" href=""><span>tdkristall@bk.ru</span><img src="img/Mail.svg" alt="почта"></a></li>
+                <li class="info-list__item nav-item nav-item__tel"><a class="nav-item__href header-nav__tel" href="">8-800-700-7443<img src="img/Phone.svg" alt="телефон"></a></li>
+                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__callback" href=""><span>Обратный звонок</span></a></li>
+              </ul>
+            </div>
+            <div class="nav-menu">
+              <ul class="nav-menu__list nav-list">
+                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Каталог труб в наличии</a></li>
+                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">О компании</a></li>
+                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Склад онлайн</a></li>
+                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Услуги</a></li>
+                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Спецпредложение</a></li>
+                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="header__middle main-display">
           <div class="video-container">
@@ -238,21 +262,21 @@
         <div class="callback-form__container">
           <div class="callback-form__wrapper">
             <div class="callback-form__block">
-              <input class="common-text common-text__black" type="text" placeholder="Ваше имя">
+              <input class="js-anim js-valid common-text common-text__black" type="text" data-req="true">
               <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
             </div>
             <div class="callback-form__block">
-              <input class="common-text common-text__black" type="tel" placeholder="Номер телефона">
+              <input class="js-anim js-valid common-text common-text__black" type="tel" data-req="true">
               <label class="common-text common-text__black"><span>Номер телефона</span><span class="star">*</span></label>
             </div>
             <div class="callback-form__block">
-              <input class="common-text common-text__black" type="text" placeholder="E-mail">
+              <input class="js-anim common-text common-text__black" type="text">
               <label class="common-text common-text__black"><span>E-mail</span></label>
             </div>
           </div>
           <div class="callback-form__wrapper">
             <div class="callback-form__block">
-              <textarea class="common-text common-text__black" name="" placeholder="Сообщение"></textarea>
+              <textarea class="js-anim common-text common-text__black"></textarea>
               <label class="common-text common-text__black"><span>Сообщение</span></label>
             </div>
           </div>
@@ -274,99 +298,5 @@
       <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
       <script src="js/s.js"></script>
     </div>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init(){
-          var myMap = new ymaps.Map("map", {
-              center: [55.160537, 61.387527],
-              zoom: 11
-          });
-        var HintLayout = ymaps.templateLayoutFactory.createClass( '<div class="balloon-img"><img src="/app/build/img/office1.jpg" height="140" width="300">', {
-                // Определяем метод getShape, который
-                // будет возвращать размеры макета хинта.
-                // Это необходимо для того, чтобы хинт автоматически
-                // сдвигал позицию при выходе за пределы карты.
-                getShape: function () {
-                    var el = this.getElement(),
-                        result = null;
-                    if (el) {
-                        var firstChild = el.firstChild;
-                        result = new ymaps.shape.Rectangle(
-                            new ymaps.geometry.pixel.Rectangle([
-                                [500, 500],
-                                [firstChild.offsetWidth, firstChild.offsetHeight]
-                            ])
-                        );
-                    }
-                    return result;
-                }
-            }
-        );
-        var myPlacemar1 = new ymaps.Placemark([55.232720, 61.318723], {
-            hintContent: 'Склад №1',
-            iconContent: 'Склад &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;№1'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            hintLayout: HintLayout,
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: '/app/build/img/Pin-stock.png',
-            // Размеры метки.
-            iconImageSize: [82, 79],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [19, 15],
-        });
-        var myPlacemar2 = new ymaps.Placemark([55.226806, 61.437336], {
-            hintContent: 'Склад №2',
-            iconContent: 'Склад &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;№2'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            hintLayout: HintLayout,
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: '/app/build/img/Pin-stock.png',
-            // Размеры метки.
-            iconImageSize: [82, 79],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [19, 15],
-        });
-
-        var m = new ymaps.Placemark([55.173262, 61.474796], {
-            // Зададим содержимое заголовка балуна.
-            //balloonContentHeader: '',
-        // Зададим содержимое основной части балуна.
-            //balloonContentBody: '<div class="balloon-img"><img src="/app/build/img/office1.jpg" height="340" width="505">',
-        // Зададим содержимое нижней части балуна.
-            //balloonContentFooter: '',
-        // Зададим содержимое всплывающей подсказки.
-            // hintContent: '<div class="balloon-img"><img src="/app/build/img/office1.jpg" height="340" width="505">'
-
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            hintLayout: HintLayout,
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: '/app/build/img/Pin-office.svg',
-            // Размеры метки.
-            iconImageSize: [82, 79],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-        });
-        myMap.geoObjects
-          .add(myPlacemar1)
-          .add(myPlacemar2)
-          .add(m);
-        //m.balloon.open();
-      }
-  </script>
   </body>
 </html>
