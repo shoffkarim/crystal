@@ -103,7 +103,9 @@ blocks.forEach(function (block) {
     label.style.display = "none";
   });
   input.addEventListener('blur', function () {
-    label.style.display = "block";
+    if (input.value === "") {
+      label.style.display = "block";
+    }
   });
 });
 
@@ -117,11 +119,25 @@ btnSubmit.addEventListener('click', function (e) {
     switch (type) {
       case 'tel':
         // eslint-disable-next-line no-case-declarations
-        let reg = new RegExp(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/);
-        console.log(reg.test(value));
+        let regTel = new RegExp(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/);
+        if (!regTel.test(value)) {
+          i.classList.add('error');
+          i.classList.remove('good');
+        } else {
+          i.classList.add('good');
+          i.classList.remove('error');
+        }
         break;
       case 'text':
-        console.log(value);
+        // eslint-disable-next-line no-case-declarations
+        let regText = new RegExp(/^[а-яА-ЯёЁ]/);
+        if (!regText.test(value)) {
+          i.classList.add('error');
+          i.classList.remove('good');
+        } else {
+          i.classList.add('good');
+          i.classList.remove('error');
+        }
         break;
       default:
         break;
