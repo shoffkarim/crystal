@@ -1,303 +1,466 @@
 <!DOCTYPE html>
 <html>
-  <head lang="ru">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="cmsmagazine" content="6a5de8b480a9f417d465ec3935efb0fd">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Кристалл</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"><script src="https://api-maps.yandex.ru/2.1/?apikey=49eed181-7d42-49d6-b4f7-a8fec50cdba6&lang=ru_RU" type="text/javascript">
-</script>
-  </head>
-  <body class="index opening">
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <div class="logo header-top__logo"><img src="img/Logo_colors.svg" alt="логотип"></div>
-          <nav class="nav header-top__nav">
-            <div class="nav-info">
-              <ul class="nav-info__list info-list">
-                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__address" href="">Челябинск, ул. Кулибина, д.5, оф 407<img src="img/Pin.svg" alt="адрес"></a></li>
-                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__email" href=""><span>tdkristall@bk.ru</span><img src="img/Mail.svg" alt="почта"></a></li>
-                <li class="info-list__item nav-item nav-item__tel"><a class="nav-item__href header-nav__tel" href="">8-800-700-7443<img src="img/Phone.svg" alt="телефон"></a></li>
-                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__callback" href=""><span>Обратный звонок</span></a></li>
-              </ul>
-              <button class="nav__button js-burger" type="button" aria-label="открыть мобильное меню"><span class="nav__button-meat"></span></button>
-            </div>
-            <div class="nav-menu">
-              <ul class="nav-menu__list nav-list">
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Каталог труб в наличии</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">О компании</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Склад онлайн</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Услуги</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Спецпредложение</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Контакты</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <div class="burger-menu js-menu">
-          <div class="burger-close js-burger__close"><img src="img/popup-close.png" alt="закрыть меню"></div>
-          <div class="burger-container">
-            <div class="nav-info">
-              <ul class="nav-info__list info-list">
-                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__address" href="">Челябинск, ул. Кулибина, д.5, оф 407<img src="img/Pin.svg" alt="адрес"></a></li>
-                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__email" href=""><span>tdkristall@bk.ru</span><img src="img/Mail.svg" alt="почта"></a></li>
-                <li class="info-list__item nav-item nav-item__tel"><a class="nav-item__href header-nav__tel" href="">8-800-700-7443<img src="img/Phone.svg" alt="телефон"></a></li>
-                <li class="info-list__item nav-item"><a class="nav-item__href header-nav__callback" href=""><span>Обратный звонок</span></a></li>
-              </ul>
-            </div>
-            <div class="nav-menu">
-              <ul class="nav-menu__list nav-list">
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Каталог труб в наличии</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">О компании</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Склад онлайн</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Услуги</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Спецпредложение</a></li>
-                <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Контакты</a></li>
-              </ul>
-            </div>
+
+<head lang="ru">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="cmsmagazine" content="6a5de8b480a9f417d465ec3935efb0fd">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <title>Кристалл</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=49eed181-7d42-49d6-b4f7-a8fec50cdba6&lang=ru_RU"
+    type="text/javascript">
+    </script>
+</head>
+
+<body class="index opening">
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="logo header-top__logo"><img src="img/Logo_colors.svg" alt="логотип"></div>
+        <nav class="nav header-top__nav">
+          <div class="nav-info">
+            <ul class="nav-info__list info-list">
+              <li class="info-list__item nav-item"><a class="nav-item__href header-nav__address" href="">Челябинск, ул.
+                  Кулибина, д.5, оф 407<img src="img/Pin.svg" alt="адрес"></a></li>
+              <li class="info-list__item nav-item"><a class="nav-item__href header-nav__email"
+                  href=""><span>tdkristall@bk.ru</span><img src="img/Mail.svg" alt="почта"></a></li>
+              <li class="info-list__item nav-item nav-item__tel"><a class="nav-item__href header-nav__tel"
+                  href="">8-800-700-7443<img src="img/Phone.svg" alt="телефон"></a></li>
+              <li class="info-list__item nav-item"><a class="nav-item__href header-nav__callback" href=""><span>Обратный
+                    звонок</span></a></li>
+            </ul>
+            <button class="nav__button js-burger" type="button" aria-label="открыть мобильное меню"><span
+                class="nav__button-meat"></span></button>
           </div>
-        </div>
-        <div class="header__middle main-display">
-          <div class="video-container">
-            <div class="video-wrapper">
-              <video preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png">
-                <source src="video/video-main.mp4" type="video/mp4">
-              </video>
-            </div>
+          <div class="nav-menu">
+            <ul class="nav-menu__list nav-list">
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Каталог труб в наличии</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">О компании</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Склад онлайн</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Услуги</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Спецпредложение</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Контакты</a></li>
+            </ul>
           </div>
-          <div class="text-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="779px" height="450px" viewBox="0 0 1000 500">
-              <defs>
-                <mask id="LetMask">
-                  <rect x="0" y="0" width="700px" height="100%" fill="#black"></rect>
-                  <text class="text-img first" font-size="100px" font-family="Inter" x="125" y="169" fill="white">Крупнейший</text>
-                  <text class="text-img second" font-size="100px" font-family="Inter" x="125" y="268" fill="white">поставщик</text>
-                  <text class="text-img third" font-size="100px" font-family="Inter" x="125" y="367" fill="white">Стальных труб</text>
-                </mask>
-              </defs>
-              <image class="img-in-text" xlink:href="img/background-text-main.png" width="1020px" height="760px" mask="url(#LetMask)"></image>
-            </svg>
-            <p class="common-text common-text__black">Сфера деятельности компании АО ТД «Кристалл» – оптовая и розничная торговля со склада трубами из разных марок стали. Наша задача — быть главным связующим элементом между производителями — отечественными и зарубежными и потребителями России, Беларуси и Казахстана.</p>
-          </div>
-        </div><a class="banner special-banner" href="">
-          <p class="special-banner__text">Специальное предложение</p><img src="img/percent.png" alt="специальное предложение"></a>
+        </nav>
       </div>
-    </header>
-    <main>
-      <div class="video-container__fix">
-        <video class="video-fix" preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png">
-          <source src="video/video-main.mp4" type="video/mp4">
-        </video>
-      </div>
-      <section class="section catalog opening">
-        <div class="container">
-          <div class="section-top">
-            <div class="about-section"><img src="img/catalog-tubes.png" alt="трубы">
-              <h2 class="common-h2 catalog-heading">Каталог</h2>
-              <p class="common-text common-text__white catalog-text">Доступные цены, выгодные условия сотрудничества и качественная продукция – то, что помогает нашим партнерам создавать и ремонтировать технику, оборудование, промышленные и гражданские объекты.</p>
-            </div><a class="curcle-link" href="">
-              <div class="curcle-link__href"><span class="underline">Скачать прайс</span></div><span>.PDF, 1.1 МБ</span>
-              <div class="arrow"><img src="img/arrow-white.png" alt="стрелка"></div></a>
+      <div class="burger-menu js-menu">
+        <div class="burger-close js-burger__close"><img src="img/popup-close.png" alt="закрыть меню"></div>
+        <div class="burger-container">
+          <div class="nav-info">
+            <ul class="nav-info__list info-list">
+              <li class="info-list__item nav-item"><a class="nav-item__href header-nav__address" href="">Челябинск, ул.
+                  Кулибина, д.5, оф 407<img src="img/Pin.svg" alt="адрес"></a></li>
+              <li class="info-list__item nav-item"><a class="nav-item__href header-nav__email"
+                  href=""><span>tdkristall@bk.ru</span><img src="img/Mail.svg" alt="почта"></a></li>
+              <li class="info-list__item nav-item nav-item__tel"><a class="nav-item__href header-nav__tel"
+                  href="">8-800-700-7443<img src="img/Phone.svg" alt="телефон"></a></li>
+              <li class="info-list__item nav-item"><a class="nav-item__href header-nav__callback" href=""><span>Обратный
+                    звонок</span></a></li>
+            </ul>
           </div>
-          <div class="catalog-block">
-            <ul class="catalog-list">
-              <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a class="catalog-item__href common-text common-text__white" href=""><span>Трубы толстостенные</span></a></li>
-              <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a class="catalog-item__href common-text common-text__white" href=""><span>Трубы котельные</span></a></li>
-              <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a class="catalog-item__href common-text common-text__white" href=""><span>Трубы газлифтные</span></a></li>
-              <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a class="catalog-item__href common-text common-text__white" href=""><span>Трубы крекинговые</span></a></li>
-              <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a class="catalog-item__href common-text common-text__white" href=""><span>Трубы электросварные</span></a></li>
+          <div class="nav-menu">
+            <ul class="nav-menu__list nav-list">
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Каталог труб в наличии</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">О компании</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Склад онлайн</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Услуги</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Спецпредложение</a></li>
+              <li class="nav-list__item nav-item"><a class="nav-item__href" href="">Контакты</a></li>
             </ul>
           </div>
         </div>
-      </section>
-      <section class="section offer">
-        <div class="container">
-          <div class="special-offer"><img src="img/offer-tubes.jpg" alt="трубы">
-            <h3 class="common-h3 offer-heading offer-heading__white">Специальное предложение</h3><a class="learn-more offer-link offer-link__white" href="">Узнать подробнее
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="14.5px">
-                <path class="line" fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.001,6.466 L33.000,6.498 L33.000,7.498 L-0.001,7.529 L-0.001,6.466 Z"></path>
-                <path class="tre" fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M32.000,0.497 L42.278,6.997 L32.000,13.497 L32.000,0.497 Z"></path>
-              </svg></a>
-          </div>
-          <div class="watch"><img src="img/camera.png" alt="трубы">
-            <h3 class="common-h3 offer-heading offer-heading__dark watch__heading">Склад онлайн</h3>
-            <p class="common-text common-text__black watch__text">Посмотрите на наш склад в режиме реального времени</p><a class="watch-more offer-link offer-link__blue" href="">Посмотреть склад
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="14.5px">
-                <path class="line" fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M-0.001,6.466 L33.000,6.498 L33.000,7.498 L-0.001,7.529 L-0.001,6.466 Z"></path>
-                <path class="tre" fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M32.000,0.497 L42.278,6.997 L32.000,13.497 L32.000,0.497 Z"></path>
-              </svg></a>
+      </div>
+      <div class="header__middle main-display">
+        <div class="video-container">
+          <div class="video-wrapper">
+            <video preload="" autoplay="autoplay" muted="muted" loop="loop" poster="img/main.png">
+              <source src="video/video-main.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
-      </section>
-      <section class="section company opening">
-        <div class="container">
-          <div class="section-top">
-            <div class="about-section">
-              <h2 class="common-h2 company-heading">Наша компания поддерживает самые высокие стандарты обслуживания</h2>
-              <p class="common-text common-text__white company-text">Для этого у нас есть необходимый опыт, подготовленные сотрудники, честное и открытое отношение к партнерам.</p>
-            </div><a class="curcle-link double-underline" href="">
-              <div class="curcle-link__href"><span class="underline">Подробнее</span></div>
-              <div class="curcle-link__href"><span class="underline">О компании</span></div>
-              <div class="arrow"><img src="img/arrow-white.png" alt="стрелка"></div></a>
-          </div>
-          <div class="partners">
-            <p class="partners-heading">Мы предлагаем нашим партнерам</p>
-            <ul class="partners-list">
-              <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon.png" alt="alt">
-                <p class="common-text common-text__white">Возможность отсрочки платежей до 90 дней</p>
-              </li>
-              <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-1.png" alt="alt">
-                <p class="common-text common-text__white">Доставку продукции автотранспортом и вагонами</p>
-              </li>
-              <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-2.png" alt="alt">
-                <p class="common-text common-text__white">Минимальные сроки отгрузки</p>
-              </li>
-              <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-3.png" alt="alt">
-                <p class="common-text common-text__white">Внимание к пожеланиям и запросам наших заказчиков</p>
-              </li>
-            </ul>
-          </div>
+        <div class="text-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="779px" height="450px" viewBox="0 0 1000 500">
+            <defs>
+              <mask id="LetMask">
+                <rect x="0" y="0" width="700px" height="100%" fill="#black"></rect>
+                <text class="text-img first" font-size="100px" font-family="Inter" x="125" y="169"
+                  fill="white">Крупнейший</text>
+                <text class="text-img second" font-size="100px" font-family="Inter" x="125" y="268"
+                  fill="white">поставщик</text>
+                <text class="text-img third" font-size="100px" font-family="Inter" x="125" y="367" fill="white">Стальных
+                  труб</text>
+              </mask>
+            </defs>
+            <image class="img-in-text" xlink:href="img/background-text-main.png" width="1020px" height="760px"
+              mask="url(#LetMask)"></image>
+          </svg>
+          <p class="common-text common-text__black">Сфера деятельности компании АО ТД «Кристалл» – оптовая и розничная
+            торговля со склада трубами из разных марок стали. Наша задача — быть главным связующим элементом между
+            производителями — отечественными и зарубежными и потребителями России, Беларуси и Казахстана.</p>
         </div>
-      </section>
-      <section class="section contacts">
-        <div class="container">
-          <div class="section-top">
-            <div class="contacts-wrapper">
-              <h2 class="common-h2 contacts-heading">Контактная информация</h2>
-              <ul class="buildings-list">
-                <li class="buildings-list__item building">
-                  <p class="building-name">Офис</p>
-                  <p class="building-address common-text common-text__black" style="max-width:230px">Челябинск, ул. Кулибина, 5, оф. 407</p>
-                  <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-96</a><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-63</a><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-98</a></div>
-                </li>
-                <li class="buildings-list__item building">
-                  <p class="building-name">Склад №1</p>
-                  <p class="building-address common-text common-text__black">Челябинск, ул. Матросова, 1 «Б» (Шагольская металлобаза)</p>
-                  <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7 (922) 755-79-06</a></div>
-                </li>
-                <li class="buildings-list__item building">
-                  <p class="building-name">Склад №2</p>
-                  <p class="building-address common-text common-text__black">Челябинск, ул. Героев Танкограда 17 «П» (ЗАО ЦПТК ЧМС)</p>
-                  <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7 (951) 489-99-95</a></div>
-                </li>
-              </ul>
-            </div>
-            <div class="map-container">
-              <div class="map-wrapper">
-                <div class="map" id="map" style="width:985px; height: 925px"></div>
-              </div>
-            </div>
-          </div>
-          <div class="advantages"><img class="advantages-back" src="img/contacts-tubes.jpg" alt="alt">
-            <p class="advantages-heading">Преимуществом нашей компании является владение оперативной информацией о производстве</p>
-            <div class="advantages-wrapper">
-              <ul class="advantages-list">
-                <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
-                  <p class="common-text common-text__white">В наличие более 8000 тонн продукции на собственных складах.</p>
-                </li>
-                <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
-                  <p class="common-text common-text__white">Сотрудничество с большинством трубных заводов в мире.</p>
-                </li>
-                <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
-                  <p class="common-text common-text__white">Производство труб нестандартных размеров.</p>
-                </li>
-                <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
-                  <p class="common-text common-text__white">Резка любых труб в размер.</p>
-                </li>
-              </ul>
-              <div class="advantages-main"><img src="img/advantages-medal.png" alt="alt">
-                <p class="common-text common-text__white">За время работы на рынке мы заслужили отличную репутацию, доверие и уважение наших поставщиков и покупателей. И постоянно делаем всё для увеличения эффективности обслуживания заказчиков.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
+      </div><a class="banner special-banner" href="">
+        <p class="special-banner__text">Специальное предложение</p><img src="img/percent.png"
+          alt="специальное предложение">
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="video-container__fix">
+      <video class="video-fix" preload="" autoplay="autoplay" muted="muted" loop="loop" poster="">
+        <source src="video/video-main.mp4" type="video/mp4">
+      </video>
+    </div>
+    <section class="section catalog opening">
       <div class="container">
-        <div class="footer-rights footer-section rights">
-          <p class="rights-company common-text common-text__white">© АО ТД «Кристалл», 2020</p>
-          <div class="developer-copyright"><a class="developer-copyright__link" href="https://www.dextra.ru/" target="_blank" title="Интернет-агентство Dextra" alt="Интернет-агентство Dextra"><span class="developer-copyright__name">Dextra</span></a><span class="developer-copyright__hint">Разработка<br>сайта</span></div>
+        <div class="section-top">
+          <div class="about-section"><img src="img/catalog-tubes.png" alt="трубы">
+            <h2 class="common-h2 catalog-heading">Каталог</h2>
+            <p class="common-text common-text__white catalog-text">Доступные цены, выгодные условия сотрудничества и
+              качественная продукция – то, что помогает нашим партнерам создавать и ремонтировать технику, оборудование,
+              промышленные и гражданские объекты.</p>
+          </div><a class="curcle-link" href="">
+            <div class="curcle-link__href"><span class="underline">Скачать прайс</span></div><span>.PDF, 1.1 МБ</span>
+            <div class="arrow"><img src="img/arrow-white.png" alt="стрелка"></div>
+          </a>
         </div>
-        <div class="footer-contacts footer-section">
-          <ul class="footer-contacts__list contacts-list">
-            <li class="contacts-list__item tel"><a class="common-text common-text__white" href="">8-800-700-7443</a>
-              <p class="common-text common-text__white">Звонок бесплатный</p>
+        <div class="catalog-block">
+          <ul class="catalog-list">
+            <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a
+                class="catalog-item__href common-text common-text__white" href=""><span>Трубы толстостенные</span></a>
             </li>
-            <li class="contacts-list__item address"><a class="common-text common-text__white" href="">Челябинск,<br> ул. Кулибина, д. 5, оф. 407</a></li>
-            <li class="contacts-list__item email"><a class="common-text common-text__white" href="">tdkristall@bk.ru</a></li>
-          </ul>
-        </div>
-        <div class="footer-nav footer-section nav-left">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a class="common-text common-text__white" href="">Каталог труб в наличии</a></li>
-            <li class="footer-nav__item"><a class="common-text common-text__white" href="">О компании</a></li>
-            <li class="footer-nav__item"><a class="common-text common-text__white" href="">Склад онлайн</a></li>
-          </ul>
-        </div>
-        <div class="footer-nav footer-section nav-right">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a class="common-text common-text__white" href="">Услуги</a></li>
-            <li class="footer-nav__item"><a class="common-text common-text__white" href="">Спецпредложение</a></li>
-            <li class="footer-nav__item"><a class="common-text common-text__white" href="">Контакты</a></li>
+            <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a
+                class="catalog-item__href common-text common-text__white" href=""><span>Трубы котельные</span></a></li>
+            <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a
+                class="catalog-item__href common-text common-text__white" href=""><span>Трубы газлифтные</span></a></li>
+            <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a
+                class="catalog-item__href common-text common-text__white" href=""><span>Трубы крекинговые</span></a>
+            </li>
+            <li class="catalog-item"><a class="catalog-item__href-outer" href=""></a><a
+                class="catalog-item__href common-text common-text__white" href=""><span>Трубы электросварные</span></a>
+            </li>
           </ul>
         </div>
       </div>
-    </footer>
-    <button class="btn btn-up btn-up__hidden" type="submit"></button>
-    <div class="popup-overlay popup--hidden"></div>
-    <div class="popup callback popup--hidden">
-      <button class="btn btn-popup__close" type="submit"><img src="/app/build/img/popup-close.png" alt="закрыть"></button>
-      <p class="callback__heading common-text common-text__black">Заказать обратный звонок</p>
-      <p class="callback__text common-text common-text__black"><span>Пожалуйста, заполните поля ниже, чтобы связаться с нами.</span></p>
-      <p class="callback__text common-text common-text__black"><span class="star">*</span><span> — поля со звёздочкой обязательны для заполнения.</span></p>
-      <form class="callback__form callback-form" action="">
-        <div class="callback-form__container">
-          <div class="callback-form__wrapper">
-            <div class="callback-form__block">
-              <input class="js-anim js-valid common-text common-text__black" type="text" data-req="true">
-              <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
-            </div>
-            <div class="callback-form__block">
-              <input class="js-anim js-valid common-text common-text__black tel-mask" type="tel" data-req="true">
-              <label class="common-text common-text__black"><span>Номер телефона</span><span class="star">*</span></label>
-            </div>
-            <div class="callback-form__block">
-              <input class="js-anim common-text common-text__black" type="text">
-              <label class="common-text common-text__black"><span>E-mail</span></label>
-            </div>
+    </section>
+    <section class="section offer">
+      <div class="container">
+        <div class="special-offer"><img src="img/offer-tubes.jpg" alt="трубы">
+          <h3 class="common-h3 offer-heading offer-heading__white">Специальное предложение</h3><a
+            class="learn-more offer-link offer-link__white" href="">Узнать подробнее
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+              height="14.5px">
+              <path class="line" fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M-0.001,6.466 L33.000,6.498 L33.000,7.498 L-0.001,7.529 L-0.001,6.466 Z"></path>
+              <path class="tre" fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="none" d="M32.000,0.497 L42.278,6.997 L32.000,13.497 L32.000,0.497 Z">
+              </path>
+            </svg></a>
+        </div>
+        <div class="watch"><img src="img/camera.png" alt="трубы">
+          <h3 class="common-h3 offer-heading offer-heading__dark watch__heading">Склад онлайн</h3>
+          <p class="common-text common-text__black watch__text">Посмотрите на наш склад в режиме реального времени</p><a
+            class="watch-more offer-link offer-link__blue" href="">Посмотреть склад
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px"
+              height="14.5px">
+              <path class="line" fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                d="M-0.001,6.466 L33.000,6.498 L33.000,7.498 L-0.001,7.529 L-0.001,6.466 Z"></path>
+              <path class="tre" fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
+                stroke-linejoin="miter" fill="none" d="M32.000,0.497 L42.278,6.997 L32.000,13.497 L32.000,0.497 Z">
+              </path>
+            </svg></a>
+        </div>
+      </div>
+    </section>
+    <section class="section company opening">
+      <div class="container">
+        <div class="section-top">
+          <div class="about-section">
+            <h2 class="common-h2 company-heading">Наша компания поддерживает самые высокие стандарты обслуживания</h2>
+            <p class="common-text common-text__white company-text">Для этого у нас есть необходимый опыт, подготовленные
+              сотрудники, честное и открытое отношение к партнерам.</p>
+          </div><a class="curcle-link double-underline" href="">
+            <div class="curcle-link__href"><span class="underline">Подробнее</span></div>
+            <div class="curcle-link__href"><span class="underline">О компании</span></div>
+            <div class="arrow"><img src="img/arrow-white.png" alt="стрелка"></div>
+          </a>
+        </div>
+        <div class="partners">
+          <p class="partners-heading">Мы предлагаем нашим партнерам</p>
+          <ul class="partners-list">
+            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon.png" alt="alt">
+              <p class="common-text common-text__white">Возможность отсрочки платежей до 90 дней</p>
+            </li>
+            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-1.png" alt="alt">
+              <p class="common-text common-text__white">Доставку продукции автотранспортом и вагонами</p>
+            </li>
+            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-2.png" alt="alt">
+              <p class="common-text common-text__white">Минимальные сроки отгрузки</p>
+            </li>
+            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-3.png" alt="alt">
+              <p class="common-text common-text__white">Внимание к пожеланиям и запросам наших заказчиков</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section contacts">
+      <div class="container">
+        <div class="section-top">
+          <div class="contacts-wrapper">
+            <h2 class="common-h2 contacts-heading">Контактная информация</h2>
+            <ul class="buildings-list">
+              <li class="buildings-list__item building">
+                <p class="building-name">Офис</p>
+                <p class="building-address common-text common-text__black" style="max-width:230px">Челябинск, ул.
+                  Кулибина, 5, оф. 407</p>
+                <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7
+                    (351) 267-45-96</a><a class="building-phone common-text common-text__black" href="">+7 (351)
+                    267-45-63</a><a class="building-phone common-text common-text__black" href="">+7 (351) 267-45-98</a>
+                </div>
+              </li>
+              <li class="buildings-list__item building">
+                <p class="building-name">Склад №1</p>
+                <p class="building-address common-text common-text__black">Челябинск, ул. Матросова, 1 «Б» (Шагольская
+                  металлобаза)</p>
+                <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7
+                    (922) 755-79-06</a></div>
+              </li>
+              <li class="buildings-list__item building">
+                <p class="building-name">Склад №2</p>
+                <p class="building-address common-text common-text__black">Челябинск, ул. Героев Танкограда 17 «П» (ЗАО
+                  ЦПТК ЧМС)</p>
+                <div class="building-phone__wrapper"><a class="building-phone common-text common-text__black" href="">+7
+                    (951) 489-99-95</a></div>
+              </li>
+            </ul>
           </div>
-          <div class="callback-form__wrapper">
-            <div class="callback-form__block">
-              <textarea class="js-anim common-text common-text__black"></textarea>
-              <label class="common-text common-text__black"><span>Сообщение</span></label>
+          <div class="map-container">
+            <div class="map-wrapper">
+              <div class="map" id="map" style="width:985px; height: 925px"></div>
             </div>
           </div>
         </div>
-        <div class="callback-bottom">
-          <div class="pd-checkbox">
-            <label for="checkbox-pd">
-              <input type="checkbox" id="checkbox-pd"><span class="fake-checkbox"></span>
-              <p class="pd common-text common-text__black"><span>Даю согласие на обработку</span><a href="">персональных данных</a></p>
-            </label>
+        <div class="advantages"><img class="advantages-back" src="img/contacts-tubes.jpg" alt="alt">
+          <p class="advantages-heading">Преимуществом нашей компании является владение оперативной информацией о
+            производстве</p>
+          <div class="advantages-wrapper">
+            <ul class="advantages-list">
+              <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
+                <p class="common-text common-text__white">В наличие более 8000 тонн продукции на собственных складах.
+                </p>
+              </li>
+              <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
+                <p class="common-text common-text__white">Сотрудничество с большинством трубных заводов в мире.</p>
+              </li>
+              <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
+                <p class="common-text common-text__white">Производство труб нестандартных размеров.</p>
+              </li>
+              <li class="advantages-item"><img src="img/advantages-check.png" alt="alt">
+                <p class="common-text common-text__white">Резка любых труб в размер.</p>
+              </li>
+            </ul>
+            <div class="advantages-main"><img src="img/advantages-medal.png" alt="alt">
+              <p class="common-text common-text__white">За время работы на рынке мы заслужили отличную репутацию,
+                доверие и уважение наших поставщиков и покупателей. И постоянно делаем всё для увеличения эффективности
+                обслуживания заказчиков.</p>
+            </div>
           </div>
-          <button class="btn btn-form" type="submit">Отправить</button>
         </div>
-      </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-rights footer-section rights">
+        <p class="rights-company common-text common-text__white">© АО ТД «Кристалл», 2020</p>
+        <div class="developer-copyright"><a class="developer-copyright__link" href="https://www.dextra.ru/"
+            target="_blank" title="Интернет-агентство Dextra" alt="Интернет-агентство Dextra"><span
+              class="developer-copyright__name">Dextra</span></a><span
+            class="developer-copyright__hint">Разработка<br>сайта</span></div>
+      </div>
+      <div class="footer-contacts footer-section">
+        <ul class="footer-contacts__list contacts-list">
+          <li class="contacts-list__item tel"><a class="common-text common-text__white" href="">8-800-700-7443</a>
+            <p class="common-text common-text__white">Звонок бесплатный</p>
+          </li>
+          <li class="contacts-list__item address"><a class="common-text common-text__white" href="">Челябинск,<br> ул.
+              Кулибина, д. 5, оф. 407</a></li>
+          <li class="contacts-list__item email"><a class="common-text common-text__white" href="">tdkristall@bk.ru</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav footer-section nav-left">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="common-text common-text__white" href="">Каталог труб в наличии</a></li>
+          <li class="footer-nav__item"><a class="common-text common-text__white" href="">О компании</a></li>
+          <li class="footer-nav__item"><a class="common-text common-text__white" href="">Склад онлайн</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav footer-section nav-right">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a class="common-text common-text__white" href="">Услуги</a></li>
+          <li class="footer-nav__item"><a class="common-text common-text__white" href="">Спецпредложение</a></li>
+          <li class="footer-nav__item"><a class="common-text common-text__white" href="">Контакты</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="cookie cookie__open">
-      <p class="cookie__text common-text common-text__black"><span>Сайт использует</span><a class="common-text" href=""> файлы «cookie»</a><span class="common-text common-text__black"> целью персонализации сервисов и повышения удобства пользования веб-сайтом.</span></p>
-      <button class="btn btn-cookie btn-cookie__disagree" type="submit">Не согласен</button>
-      <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
-    </div>
-    <script src="js/imask.js"></script>
-    <script src="js/s.js"></script>
-  </body>
+  </footer>
+  <button class="btn btn-up btn-up__hidden" type="submit"></button>
+  <div class="popup-overlay popup--hidden"></div>
+  <div class="popup callback popup--hidden">
+    <button class="btn btn-popup__close" type="submit"><img src="img/popup-close.png" alt="закрыть"></button>
+    <p class="callback__heading common-text common-text__black">Заказать обратный звонок</p>
+    <p class="callback__text common-text common-text__black"><span>Пожалуйста, заполните поля ниже, чтобы связаться с
+        нами.</span></p>
+    <p class="callback__text common-text common-text__black"><span class="star">*</span><span> — поля со звёздочкой
+        обязательны для заполнения.</span></p>
+    <form class="callback__form callback-form" action="">
+      <div class="callback-form__container">
+        <div class="callback-form__wrapper">
+          <div class="callback-form__block">
+            <input class="js-anim js-valid common-text common-text__black" type="text" data-req="true">
+            <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
+          </div>
+          <div class="callback-form__block">
+            <input class="js-anim js-valid common-text common-text__black tel-mask" type="tel" data-req="true">
+            <label class="common-text common-text__black"><span>Номер телефона</span><span class="star">*</span></label>
+          </div>
+          <div class="callback-form__block">
+            <input class="js-anim common-text common-text__black" type="text">
+            <label class="common-text common-text__black"><span>E-mail</span></label>
+          </div>
+        </div>
+        <div class="callback-form__wrapper">
+          <div class="callback-form__block">
+            <textarea class="js-anim common-text common-text__black"></textarea>
+            <label class="common-text common-text__black"><span>Сообщение</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="callback-bottom">
+        <div class="pd-checkbox">
+          <label for="checkbox-pd">
+            <input type="checkbox" id="checkbox-pd"><span class="fake-checkbox"></span>
+            <p class="pd common-text common-text__black"><span>Даю согласие на обработку</span><a href="">персональных
+                данных</a></p>
+          </label>
+        </div>
+        <button class="btn btn-form" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="cookie cookie__open">
+    <p class="cookie__text common-text common-text__black"><span>Сайт использует</span><a class="common-text" href="">
+        файлы «cookie»</a><span class="common-text common-text__black"> целью персонализации сервисов и повышения
+        удобства пользования веб-сайтом.</span></p>
+    <button class="btn btn-cookie btn-cookie__disagree" type="submit">Не согласен</button>
+    <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
+  </div>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [55.160537, 61.387527],
+        zoom: 11
+      });
+      var HintLayout1 = ymaps.templateLayoutFactory.createClass('<div class="balloon-img"><img src="img/office1.jpg" height="240" width="400">', {
+        getShape: function () {
+          var el = this.getElement(),
+            result = null;
+          if (el) {
+            var firstChild = el.firstChild;
+            result = new ymaps.shape.Rectangle(
+              new ymaps.geometry.pixel.Rectangle([
+                [500, 500],
+                [firstChild.offsetWidth, firstChild.offsetHeight]
+              ])
+            );
+          }
+          return result;
+        }
+      }
+      );
+      var HintLayout2 = ymaps.templateLayoutFactory.createClass('<div class="balloon-img"><img src="img/office1.jpg" height="240" width="400">', {
+        getShape: function () {
+          var el = this.getElement(),
+            result = null;
+          if (el) {
+            var firstChild = el.firstChild;
+            result = new ymaps.shape.Rectangle(
+              new ymaps.geometry.pixel.Rectangle([
+                [500, 500],
+                [firstChild.offsetWidth, firstChild.offsetHeight]
+              ])
+            );
+          }
+          return result;
+        }
+      }
+      );
+      var HintLayout3 = ymaps.templateLayoutFactory.createClass('<div class="balloon-img"><img src="img/office1.jpg" height="240" width="400">', {
+        getShape: function () {
+          var el = this.getElement(),
+            result = null;
+          if (el) {
+            var firstChild = el.firstChild;
+            result = new ymaps.shape.Rectangle(
+              new ymaps.geometry.pixel.Rectangle([
+                [500, 500],
+                [firstChild.offsetWidth, firstChild.offsetHeight]
+              ])
+            );
+          }
+          return result;
+        }
+      }
+      );
+      var myPlacemar1 = new ymaps.Placemark([55.232720, 61.318723], {
+        hintContent: 'Склад №1',
+        iconContent: 'Склад &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;№1'
+      }, {
+        hintLayout: HintLayout1,
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: 'img/Pin-stock.png',
+        iconImageSize: [82, 79],
+        iconContentOffset: [19, 15],
+
+      });
+
+      var myPlacemar2 = new ymaps.Placemark([55.226806, 61.437336], {
+        hintContent: 'Склад №2',
+        iconContent: 'Склад &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;№2'
+      }, {
+        hintLayout: HintLayout2,
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: 'img/Pin-stock.png',
+        iconImageSize: [82, 79],
+        iconContentOffset: [19, 15],
+      });
+
+      var m = new ymaps.Placemark([55.173262, 61.474796], {
+      }, {
+        hintLayout: HintLayout3,
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: 'img/Pin-office.svg',
+        iconImageSize: [82, 79],
+        iconContentOffset: [15, 15],
+      });
+
+      myMap.geoObjects
+        .add(myPlacemar1)
+        .add(myPlacemar2)
+        .add(m);
+    }
+  </script>
+  <script src="js/imask.js"></script>
+  <script src="js/s.js"></script>
+</body>
+
 </html>

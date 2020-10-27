@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 setTimeout(() => {
   let textImg = document.querySelectorAll(".text-img");
   textImg.forEach(function (i) {
@@ -115,7 +116,7 @@ btnSubmit.addEventListener('click', function (e) {
     let type = i.getAttribute('type');
     switch (type) {
       case 'tel':
-        // eslint-disable-next-line no-case-declarations
+        // eslint-disable-next-line no-case-declarations, no-useless-escape
         let reg = new RegExp(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/);
         console.log(reg.test(value));
         break;
