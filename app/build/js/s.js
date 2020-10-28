@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 setTimeout(() => {
   let textImg = document.querySelectorAll(".text-img");
   textImg.forEach(function (i) {
@@ -12,7 +13,6 @@ if (document.documentElement.clientWidth < 1550) {
   textImgFirst.setAttribute("y", "102");
   textImgSecond.setAttribute("y", "196");
   textImgThird.setAttribute("y", "290");
-  console.log(textImgFirst.y);
 }
 
 if (document.documentElement.clientWidth < 767) {
@@ -118,7 +118,7 @@ btnSubmit.addEventListener('click', function (e) {
     let type = i.getAttribute('type');
     switch (type) {
       case 'tel':
-        // eslint-disable-next-line no-case-declarations
+        // eslint-disable-next-line no-case-declarations, no-useless-escape
         let regTel = new RegExp(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/);
         if (!regTel.test(value)) {
           i.classList.add('error');
@@ -144,3 +144,11 @@ btnSubmit.addEventListener('click', function (e) {
     }
   });
 });
+
+// mask ======
+let element = document.querySelector('.tel-mask');
+let maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+// eslint-disable-next-line no-undef
+let mask = IMask(element, maskOptions);
