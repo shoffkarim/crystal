@@ -1,0 +1,35 @@
+.inner
+  .header
+    background-image url('/app/build/img/header-background1.jpg')
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+    object-fit: cover
+    min-height auto
+    &-wrapper
+      max-width 1440px
+      margin: 0 auto
+  .nav-item .nav-item__href
+    color: #ffffff
+.breadcrumbs
+  margin-top 140px
+  margin-bottom 35px
+  &-list
+    display: flex
+    flex-direction row
+    justify-content: flex-start
+    align-items: baseline
+  &-item
+    &__href
+      font-family: "Inter", sans-serif
+      font-size 14px
+      font-weight 400
+      color: #ffffff
+      line-height 23px
+      border-bottom 1px solid #ffffff
+    svg
+      width 7px
+      height 5px
+      transform rotate(-90deg)
+    &__arrow
+      fill: #ffffff

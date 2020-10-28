@@ -1257,7 +1257,7 @@ button {
 }
 .catalog-block .catalog-item__href::before {
   content: "";
-  background-image: url("../img/arrow-white.png");
+  background-image: url("/app/build/img/arrow-white.png");
   background-repeat: no-repeat;
   width: 43px;
   height: 14px;
@@ -1730,7 +1730,7 @@ button {
 }
 .building-address::before {
   content: "";
-  background-image: url("../img/Pin.svg");
+  background-image: url("/app/build/img/Pin.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 2px;
@@ -1751,7 +1751,7 @@ button {
 }
 .building-phone__wrapper::before {
   content: "";
-  background-image: url("../img/Phone.svg");
+  background-image: url("/app/build/img/Phone.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 2px;
@@ -2079,7 +2079,7 @@ button {
 }
 .contacts-list__item.tel::before {
   content: "";
-  background-image: url("../img/phone-white.png");
+  background-image: url("/app/build/img/phone-white.png");
   background-repeat: no-repeat;
   position: absolute;
   top: 4px;
@@ -2093,7 +2093,7 @@ button {
 }
 .contacts-list__item.address::before {
   content: "";
-  background-image: url("../img/pin-white.png");
+  background-image: url("/app/build/img/pin-white.png");
   background-repeat: no-repeat;
   position: absolute;
   top: 2px;
@@ -2107,7 +2107,7 @@ button {
 }
 .contacts-list__item.email::before {
   content: "";
-  background-image: url("../img/mail-white.png");
+  background-image: url("/app/build/img/mail-white.png");
   background-repeat: no-repeat;
   position: absolute;
   top: 2px;
@@ -2172,7 +2172,7 @@ button {
 }
 .btn-up::before {
   content: "";
-  background-image: url("../img/arrow-up.png");
+  background-image: url("/app/build/img/arrow-up.png");
   width: 13px;
   height: 5px;
   position: absolute;
@@ -2361,7 +2361,7 @@ button {
 }
 .pd-checkbox .fake-checkbox:before {
   content: "";
-  background-image: url("../img/checkbox-arrow.png");
+  background-image: url("/app/build/img/checkbox-arrow.png");
   background-repeat: no-repeat;
   width: 11px;
   height: 8px;
@@ -2427,4 +2427,45 @@ button {
 }
 .callback-form__block input.error {
   border: 1px solid #ed1c24;
+}
+.inner .header {
+  background-image: url("/app/build/img/header-background1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  min-height: auto;
+}
+.inner .header-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.inner .nav-item .nav-item__href {
+  color: #fff;
+}
+.breadcrumbs {
+  margin-top: 140px;
+  margin-bottom: 35px;
+}
+.breadcrumbs-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.breadcrumbs-item__href {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23px;
+  border-bottom: 1px solid #fff;
+}
+.breadcrumbs-item svg {
+  width: 7px;
+  height: 5px;
+  transform: rotate(-90deg);
+}
+.breadcrumbs-item__arrow {
+  fill: #fff;
 }
