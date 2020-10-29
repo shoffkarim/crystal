@@ -2790,3 +2790,33 @@ button {
     max-width: 300px;
   }
 }
+.inner.catalog-page .header {
+  background-image: url("/app/build/img/header-background2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  min-height: auto;
+  padding-bottom: 50px;
+}
+.inner.catalog-page .catalog-tubes {
+  margin-top: 60px;
+}
+.inner.catalog-page .tubes-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inner.catalog-page .tubes-item {
+  margin-right: 40px;
+}
+.inner.catalog-page .tubes-item:last-child {
+  margin-right: 0px;
+}
+.inner.catalog-page .tubes-item__href {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #fff;
+}
