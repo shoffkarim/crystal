@@ -6,30 +6,205 @@
     background-repeat no-repeat
     object-fit: cover
     min-height auto
+    padding-bottom 50px
     &-wrapper
       max-width 1440px
       margin: 0 auto
+    .logo-text
+      fill: #ffffff
+    .logo .st0
+      fill: #ffffff
+    .nav-item .st0
+      fill: #ffffff
+    .header-nav__callback
+      span
+        border-bottom 1px dashed #ffffff
+        &:hover
+          border-bottom 1px dashed rgba(255,255,255,0)
+          transition all 0.4s
+    .header-nav__email
+      span
+        border-bottom 1px solid #ffffff
+        &:hover
+          border-bottom 1px solid rgba(255,255,255,0)
+          transition all 0.4s
   .nav-item .nav-item__href
     color: #ffffff
+  .page-title
+    font-family "Inter", sans-serif
+    font-size 50px
+    font-weight 700
+    line-height 56px
+    color: #ffffff
+    max-width 840px
+  .wyziwyg-inner
+    padding-top: 55px
+    padding-bottom 108px
+    max-width: 1440px
+    margin 0 auto
+    .wyziwyg-wrapper
+      max-width: 960px
+    p
+      common-text()
+      margin-bottom: 27px
+    a
+      color: #126bc6
+      text-decoration-line: underline
+      text-decoration-color: #d0e1f4
+      transition: all 0.4s
+      &:hover
+        text-decoration-color: #ffffff
+        transition: all 0.4s
+    img
+      max-width 900px
+      display block
+      margin-top 34px
+      + p
+        font-family "Inter", sans-serif
+        font-size 14px
+        line-height 20px
+        font-weight 400
+        color: #000000
+        margin-top 21px
+        margin-bottom 27px
+    h2
+      font-family "Inter", sans-serif
+      font-size 38px
+      line-height 44px
+      font-weight 700
+      color: #000000
+      margin-top 77px
+      margin-bottom 35px
+    ul
+      margin-bottom 28px
+      padding-top: 2px
+      li
+        common-text()
+        padding-left: 27px
+        position relative
+        &::before
+          content: ""
+          background-color #126bc6
+          width: 15px
+          height: 1px
+          position absolute
+          top: 12px
+          left: 0
+    ol
+      list-style decimal
+      margin-left: 17px
+      margin-bottom 28px
+      padding-top 2px
+      li
+        common-text()
+        position relative
+        padding-left: 10px
+        &::marker
+          position absolute
+          bottom: 0px
+          left: 0
+          color: #126bc6
+          font-family "Inter", sans-serif
+          font-weight 700
+          font-size 15px
+          line-height 23px
+    h3
+      font-family "Inter", sans-serif
+      font-size 30px
+      line-height 36px
+      font-weight 700
+      color: #000000
+      margin-top 77px
+      margin-bottom 35px
+    table
+      margin-top: 36px
+      max-width: 850px
+      th
+        background-color #126bc6
+        font-family "Inter", sans-serif
+        font-weight 700
+        font-size 15px
+        line-height 23px
+        color: #ffffff
+        text-align left
+        padding-top: 15px
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom 15px
+      td
+        font-family "Inter", sans-serif
+        font-size 14px
+        line-height 20px
+        font-weight 400
+        color: #000000
+        max-width 345px
+        padding-top: 15px
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom 15px
+        border 1px solid #d0e1f4
+        border-top: none
+      tr
+        td
+          &:first-child
+            border-left 2px solid #d0e1f4
+          &:last-child
+            border-right 2px solid #d0e1f4
+        &:last-child
+          border-bottom 2px solid #d0e1f4
+          td
+            border-bottom none
+    h4
+      font-family "Inter", sans-serif
+      font-size 24px
+      line-height 30px
+      font-weight 700
+      color: #000000
+      margin-top 81px
+      margin-bottom 37px
 .breadcrumbs
-  margin-top 140px
-  margin-bottom 35px
+  margin-top 129px
+  margin-bottom 25px
   &-list
     display: flex
     flex-direction row
     justify-content: flex-start
     align-items: baseline
   &-item
+    position relative
     &__href
       font-family: "Inter", sans-serif
       font-size 14px
       font-weight 400
       color: #ffffff
       line-height 23px
-      border-bottom 1px solid #ffffff
+      text-decoration-line: underline
+      text-decoration-color: rgba(255, 255, 255, 0.2)
+      transition: all 0.4s
+    &:hover
+      text-decoration none
+      transition: all 0.4s
     svg
       width 7px
       height 5px
       transform rotate(-90deg)
+      position: absolute;
+      top: 9px;
+      right: -17px;
     &__arrow
       fill: #ffffff
+@media screen and (max-width: 1550px)
+  .inner
+    .container
+      max-width: 1290px;
+    .breadcrumbs
+      margin-top: 110px
+    .wyziwyg-inner
+      max-width: 1290px;
+      padding-bottom 67px
+      .wyziwyg-wrapper
+        max-width: 850px
+      img
+        max-width: 850px
+      ul, ol
+        max-width: 800px
