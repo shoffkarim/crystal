@@ -1005,12 +1005,9 @@ button {
   animation: imgInText infinite 5s ease-in-out backwards;
 }
 .opening .header-top {
-  position: fixed;
   top: -200px;
   opacity: 0;
-  visibility: hidden;
   transition: opacity 1s, top 1s;
-  margin-bottom: 200px;
 }
 .opening .text-container {
   opacity: 0;
@@ -2688,5 +2685,103 @@ button {
   .inner .wyziwyg-inner ul,
   .inner .wyziwyg-inner ol {
     max-width: 800px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .inner .container {
+    max-width: 900px;
+    padding: 0 15px;
+  }
+  .inner .wyziwyg-inner {
+    max-width: 900px;
+  }
+  .inner .wyziwyg-inner .wyziwyg-wrapper {
+    max-width: 800px;
+  }
+  .inner .wyziwyg-inner img {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .inner .container {
+    max-width: 800px;
+  }
+  .inner .wyziwyg-inner {
+    max-width: 800px;
+  }
+  .inner .wyziwyg-inner .wyziwyg-wrapper {
+    max-width: 700px;
+  }
+  .inner .wyziwyg-inner img {
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 868px) {
+  .inner .container {
+    max-width: 700px;
+  }
+  .inner .wyziwyg-inner {
+    max-width: 700px;
+  }
+  .inner .wyziwyg-inner .wyziwyg-wrapper {
+    max-width: 600px;
+  }
+  .inner .wyziwyg-inner img {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner .container {
+    max-width: 550px;
+  }
+  .inner .wyziwyg-inner {
+    max-width: 550px;
+  }
+  .inner .wyziwyg-inner .wyziwyg-wrapper {
+    max-width: 450px;
+  }
+  .inner .wyziwyg-inner img {
+    max-width: 450px;
+  }
+  .inner .wyziwyg-inner .table-wrapper {
+    overflow-x: auto;
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .inner .container {
+    max-width: 400px;
+  }
+  .inner .wyziwyg-inner {
+    max-width: 400px;
+  }
+  .inner .wyziwyg-inner .wyziwyg-wrapper {
+    max-width: 400px;
+  }
+  .inner .wyziwyg-inner img {
+    max-width: 400px;
+  }
+  .inner .wyziwyg-inner .table-wrapper {
+    overflow-x: auto;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inner .container {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+  .inner .wyziwyg-inner {
+    max-width: 300px;
+  }
+  .inner .wyziwyg-inner .wyziwyg-wrapper {
+    max-width: 300px;
+  }
+  .inner .wyziwyg-inner img {
+    max-width: 300px;
+  }
+  .inner .wyziwyg-inner .table-wrapper {
+    overflow-x: auto;
+    max-width: 300px;
   }
 }
