@@ -2797,10 +2797,10 @@ button {
   background-repeat: no-repeat;
   object-fit: cover;
   min-height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 34px;
 }
 .inner.catalog-page .catalog-tubes {
-  margin-top: 60px;
+  margin-top: 64px;
 }
 .inner.catalog-page .tubes-list {
   display: flex;
@@ -2808,7 +2808,7 @@ button {
   justify-content: center;
 }
 .inner.catalog-page .tubes-item {
-  margin-right: 40px;
+  margin-right: 38px;
 }
 .inner.catalog-page .tubes-item:last-child {
   margin-right: 0px;
@@ -2819,4 +2819,281 @@ button {
   font-weight: 400;
   line-height: 23px;
   color: #fff;
+  padding-bottom: 5px;
+}
+.inner.catalog-page .tubes-item__href.active {
+  border-bottom: 1px solid #fff;
+  transition: all 0.4s;
+}
+.inner.catalog-page .tubes-item__href.active:hover {
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  transition: all 0.4s;
+}
+.inner-page .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 140px;
+}
+.catalog-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.catalog-date p {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 15px;
+  color: #000;
+}
+.catalog-date img {
+  width: 25px;
+}
+.filter {
+  margin-top: 35px;
+}
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 337px;
+}
+.filter-item__name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+  color: #000;
+  margin-bottom: 13px;
+}
+.choices {
+  width: 336px;
+}
+.choices__item {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.choices__inner {
+  padding: 0;
+  background-color: #f1f7fd;
+  border-radius: 0;
+  border: 1px solid #d0e1f4;
+}
+.choices__list {
+  padding: 10px 20px;
+  padding-bottom: 13px;
+}
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0px;
+}
+.is-open .choices__inner {
+  border-radius: 0;
+  border: 1px solid #d0e1f4;
+}
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border-radius: 0;
+  border: 1px solid #d0e1f4;
+}
+.choices[data-type*=select-one]:after {
+  content: "";
+  background-image: url("/app/build/img/arrow.svg");
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  border: none;
+  transform: rotate(0deg);
+  transition: all 0.4s;
+  margin-top: 0;
+}
+.choices__list--dropdown .choices__list {
+  max-height: 493px;
+  padding-left: 0;
+}
+.choices__list--dropdown {
+  background-color: #fff;
+  border: 1px solid #d0e1f4;
+  border-radius: 0px;
+  padding: 0;
+}
+.is-open .choices__list--dropdown {
+  background-color: #fff;
+  border: 1px solid #d0e1f4;
+}
+.choices__list--dropdown .choices__item--selectable:after {
+  display: none;
+}
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: #126bc6;
+  color: #fff;
+}
+.choices__list--dropdown .choices__list {
+  padding-right: 10px;
+}
+.choices__list--dropdown .choices__list::-webkit-scrollbar {
+  width: 4px;
+}
+.choices__list--dropdown .choices__list::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 10px;
+}
+.choices__list--dropdown .choices__list::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #aecdec;
+  transition: all 0.3s;
+}
+.choices__list--dropdown .choices__list::-webkit-scrollbar-track {
+  background-color: #f1f7fd;
+}
+.choices__list--dropdown .choices__list::-webkit-scrollbar-thumb:hover {
+  background-color: #126bc6;
+  transition: all 0.3s;
+}
+.choices__list--dropdown {
+  padding-right: 8px;
+}
+.choices[data-type*=select-one].is-open:after {
+  border: none;
+  margin-top: 0;
+  transform: rotate(180deg);
+  transition: all 0.4s;
+}
+.choices__list--dropdown .choices__item {
+  padding-top: 4px;
+  padding-left: 22px;
+  padding-bottom: 5px;
+}
+.catalog-table__wrapper {
+  margin-top: 40px;
+}
+.catalog-table__wrapper table {
+  width: 100%;
+}
+.catalog-table__wrapper table th {
+  background-color: #126bc6;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 23px;
+  color: #fff;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  max-width: 288px;
+}
+.catalog-table__wrapper table td {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+  max-width: 288px;
+  width: 20%;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border: 1px solid #d0e1f4;
+  border-top: none;
+}
+.catalog-table__wrapper table tr td:first-child {
+  border-left: 2px solid #d0e1f4;
+}
+.catalog-table__wrapper table tr td:last-child {
+  border-right: 2px solid #d0e1f4;
+}
+.catalog-table__wrapper table tr:last-child {
+  border-bottom: 2px solid #d0e1f4;
+}
+.catalog-table__wrapper table tr:last-child td {
+  border-bottom: none;
+}
+@media screen and (max-width: 1500px) {
+  .inner-page .container {
+    max-width: 1290px;
+  }
+  .filter-item {
+    max-width: 297px;
+  }
+  .choices {
+    width: 297px;
+  }
+  .choices__list {
+    padding: 12px 19px 13px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .inner-page .container {
+    max-width: 900px;
+  }
+  .inner.catalog-page .tubes-item {
+    margin-right: 20px;
+  }
+  .inner.catalog-page .tubes-list {
+    justify-content: left;
+  }
+  .filter-item {
+    max-width: 200px;
+  }
+  .choices {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .inner-page .container {
+    max-width: 800px;
+  }
+  .filter-item {
+    max-width: 180px;
+  }
+  .choices {
+    width: 180px;
+  }
+  .inner.catalog-page .tubes-list {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner-page .container {
+    max-width: 550px;
+  }
+  .catalog-table__wrapper {
+    overflow-x: auto;
+  }
+  .filter-list {
+    flex-direction: column;
+  }
+  .filter-item {
+    max-width: none;
+    margin-bottom: 15px;
+  }
+  .choices {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .inner-page .container {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inner-page .container {
+    max-width: 300px;
+    padding: 30px 10px;
+  }
 }
