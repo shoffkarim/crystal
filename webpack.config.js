@@ -55,17 +55,21 @@ module.exports = {
                     'css-loader',
                     'postcss-loader',
                 ]
+            },
+            {
+                test: /\.(svg|png|jpg|eot|woff|woff2|ttf)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    publicPath: '../img/',
+                }
             }
-            // {
-            //     test: /\.(svg|eot|woff|woff2|ttf)$/,
-            //     loader: 'file-loader'
-            // }
         ]
     },
     plugins: [
         new uglifyJsPlugin(),
         new ExtractTextPlugin({
-            filename: 'css/main.css'
+            filename: 'css/style.css'
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
