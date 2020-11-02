@@ -265,7 +265,12 @@
       &::after
         width: 100%
         transition all 0.4s
-
+.nav-menu .nav-item__href.active:after,
+.nav-menu .nav-item__href.active:before
+  width: 100%
+  transition all 0.4s
+.nav-menu .nav-item__href.active
+  color: #126bc6;
 @media screen and (max-width: 1760px)
   .video-wrapper
     margin-left 0
