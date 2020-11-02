@@ -11,6 +11,7 @@
     width: 100%
     margin-bottom 39px
   main
+    overflow-x hidden
     .container
       max-width: 1440px
       position relative
@@ -81,3 +82,80 @@
       font-size 15px
       line-height 23px
       max-width 185px
+@media screen and (max-width: 1500px)
+  .contacts-page
+    main
+      .container
+        max-width: 1284px
+        padding-bottom: 40px
+  .contacts-page .header
+    padding-bottom: 15px
+  .contacts-page .buildings-list
+    max-width: 575px
+  .contacts-page .building
+    max-width: 285px
+  .requisites-item
+    width: 325px
+  .requisites-item:last-child
+    width: 260px
+  .requisites-item:first-child
+    width: 260px
+@media screen and (max-width: 1365px)
+  .contacts-page
+    main
+      .container
+        max-width: 900px
+      .section-top
+        flex-direction column
+      .map-container
+        position relative
+        top: auto
+        right: auto
+        height: 600px
+      .map
+        left: 0
+        margin-right: auto
+  .requisites
+    margin-top 0px
+  .requisites-list
+    flex-direction column
+  .requisites-item:first-child, .requisites-item:last-child
+    width: 100%
+    max-width: none
+  .requisites-item
+    width: 100%
+    max-width: none
+    padding-left: 0px
+    border-right none
+
+@media screen and (max-width: 1000px)
+  .contacts-page
+    main
+      .container
+        max-width: 800px
+
+@media screen and (max-width: 868px)
+  .contacts-page
+    main
+      .container
+        max-width: 700px
+
+@media screen and (max-width: 767px)
+  .contacts-page
+    main
+      .container
+        max-width: 550px
+
+@media screen and (max-width: 600px)
+  .contacts-page
+    main
+      .container
+        max-width: 400px
+
+@media screen and (max-width: 450px)
+  .contacts-page
+    main
+      .container
+        max-width: 300px
+  .requisites
+    padding: 48px 20px 38px 22px

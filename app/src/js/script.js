@@ -1,8 +1,8 @@
 /* eslint-disable import/named */
 /* eslint-disable no-unused-vars */
 
-//sass
-import './../stylus/style.styl'
+// sass =======
+import "../stylus/style.styl";
 
 // choices =========
 import { catalogSelect } from "./modules/choices-init";
