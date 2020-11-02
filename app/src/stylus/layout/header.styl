@@ -297,7 +297,7 @@
     font-size 98px
   .header__middle .common-text
     max-width: 490px
-    margin-top: -168px
+    margin-top: -165px
   .banner.special-banner
     bottom -38px
   .special-banner__text
@@ -305,7 +305,7 @@
   .cookie
     padding: 20px 30px
   .cookie__open
-    bottom -35px
+    bottom 35px
 
 @media screen and (max-width: 1365px)
   .video-wrapper
@@ -340,7 +340,12 @@
     margin-right: 10px
   .header-top__logo
     width: 70px
-
+  .cookie
+    flex-direction column
+  .btn-cookie
+    margin-top: 10px
+  .btn-cookie__disagree
+    margin-left: 0
 @media screen and (max-width: 767px)
   .header__middle .common-text
     margin-left: 14px
@@ -358,12 +363,18 @@
     width: 400px;
   .nav__button
     margin-left: 0
+  .cookie
+    max-width: 400px
 @media screen and (max-width: 450px)
   .video-wrapper
     width: 300px;
     height: 284px;
   .text-container svg
     width: 300px
+  .cookie
+    max-width: 300px
+  .btn-cookie
+    padding: 15px 15px
 
 .img-in-text
   animation: imgInText infinite 5s ease-in-out backwards
