@@ -96,12 +96,14 @@
         transition all 0.2s
     &__tel
       margin-right 18px
-
+.nav-item__href.header-nav__address:hover
+  color: #000000
 .video
   &-container
     max-width: 730px
     min-width: 730px
     margin-right 40px
+    position relative
   &-wrapper
     margin: 0 auto
     animation: videoOpening 2s ease-in-out
@@ -121,11 +123,18 @@
   padding-left: 25px
   position relative
   svg
-    width: 15px
     position absolute
     top: 3px
     left: 2px
-
+.header-nav__address
+  svg
+    width: 12px
+.header-nav__email
+  svg
+    width: 14px
+.header-nav__tel
+  svg
+    width: 13px
 .header-nav__tel
   font-weight 700
 .header-nav__callback,.header-nav__email
@@ -136,12 +145,15 @@
       transition all 0.4s
 
 .video-wrapper
-  position: relative;
+  position: absolute;
   width: 715px;
   height: 724px;
   overflow: hidden;
   z-index: 10;
   margin-left: 52px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   video
     position absolute
     width: 100%
@@ -171,21 +183,32 @@
 .header .container
   position relative
 .banner.special-banner
-  position absolute
-  right: 0
-  bottom: 0px
+  position fixed
+  right: 98px
+  bottom: 40px
   display: flex
   flex-direction row
   justify-content: flex-end
   align-items: center
+  opacity 1
+  transition opacity 2s 0.8s, color 0.4s
+  width: 197px
+  height: 87px
+  img
+    position absolute
+    top: 0
+    right: 0
   &:hover
+    .special-banner__text
+      color: #0660bf
+      transition all 0.4s
     img
-      animation: rotateY infinite 2s
+      animation: top-down infinite 2s
 
 .special-banner__text
   font-family "Inter", sans-serif
   font-weight 700
-  color: #0660bf
+  color: #000000
   text-transform uppercase
   max-width 110px
   font-size 11px
@@ -193,6 +216,8 @@
   margin-top 10px
   margin-right 10px
   letter-spacing: 1px
+  transition all 0.4s
+  margin-right auto
 .cookie
   flex-direction row
   background-color #f1f7fd
@@ -201,8 +226,8 @@
   display none
   &__open
     position fixed
-    bottom: 90px
-    left: 100px
+    bottom: 0px
+    left: 0px
     z-index 999
     visibility visible
     display flex
@@ -227,6 +252,12 @@
     margin-left: 25px
     padding-left: 28px
     padding-right: 29px
+    transition all 0.4s
+    &:hover
+      background-color #2a83dd
+      border 1px solid #2a83dd
+      color: #ffffff
+      transition: all 0.4s
   &__agree
     color: #ffffff
     background-color #126bc6
@@ -304,8 +335,7 @@
     color: #000000
   .cookie
     padding: 20px 30px
-  .cookie__open
-    bottom 35px
+
 
 @media screen and (max-width: 1365px)
   .video-wrapper
@@ -326,10 +356,6 @@
   .partners-list__item:last-child
     width: 100%
 @media screen and (max-width: 1000px)
-  .cookie__open
-    position fixed
-    bottom: 35px
-    left: 30px
   .nav-item
     font-size 12px
     line-height 20px
@@ -384,20 +410,22 @@
     padding: 15px 15px
 
 .img-in-text
-  animation: imgInText infinite 5s ease-in-out backwards
+  animation: imgInText infinite 10s ease-in-out backwards
 
 
 .opening
   .header-top
-    top: -200px
     opacity: 0
-    transition: opacity 1s, top 1s
+    transition: opacity 1s
   .text-container
     opacity 0
     transition: opacity 2s
   .cookie
     opacity 0
     transition: opacity 3s
+  .banner.special-banner
+    opacity 0
+    transition opacity 2s 1s
 .catalog.opening
   padding-top 500px
   opacity 0
@@ -408,10 +436,8 @@
   transition: all 1s
 .header-top
   position relative
-  top: 0px
   opacity: 1
   visibility visible
-  margin-bottom 0
   transition: opacity 1s, top 1s
 .text-container
   opacity 1
