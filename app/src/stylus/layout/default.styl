@@ -1,7 +1,9 @@
 .inner
+  .nav__button-meat, .nav__button::after, .nav__button:before
+    background-color: #ffffff
   .header
     background-image url('/app/build/img/header-background1.jpg')
-    background-position center
+    background-position 70%
     background-size cover
     background-repeat no-repeat
     object-fit: cover
@@ -212,18 +214,26 @@
         max-width: 800px
 
 
-@media screen and (max-width: 1365px)
+@media screen and (max-width: 1300px)
   .inner
     .container
-      max-width: 900px;
-      padding: 0 15px
+      max-width: 1120px;
     .wyziwyg-inner
-      max-width: 900px;
+      max-width: 1120px;
       .wyziwyg-wrapper
-        max-width: 800px
+        max-width: 900px
+      img
+        max-width: 900px
+@media(max-width: 1200px)
+  .inner
+    .container
+      max-width: 950px;
+    .wyziwyg-inner
+      max-width: 950px;
+      .wyziwyg-wrapper
+        max-width: 800
       img
         max-width: 800px
-
 @media screen and (max-width: 1000px)
   .inner
     .container
@@ -245,7 +255,8 @@
         max-width: 600px
       img
         max-width: 600px
-
+  .inner .header
+    background-position 90%
 
 @media screen and (max-width: 767px)
   .inner
@@ -260,6 +271,18 @@
       .table-wrapper
         overflow-x auto
         max-width: 450px
+      h1
+        font-size 30px
+        line-height 36px
+      h2
+        font-size 24px
+        line-height 30px
+      h3
+        font-size 20px
+        line-height 26px
+      h4
+        font-size 16
+        line-height 22px
 
 @media screen and (max-width: 600px)
   .inner
@@ -271,6 +294,7 @@
         max-width: 400px
       img
         max-width: 400px
+        width: 100%
       .table-wrapper
         overflow-x auto
         max-width: 400px

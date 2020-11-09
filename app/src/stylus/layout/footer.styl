@@ -25,7 +25,8 @@
       font-weight 700
       color: #ffffff
     .email a
-      text-decoration underline
+      text-decoration-line underline
+      text-decoration-color rgba(255,255,255,1)
       transition all 0.4s
   &-nav
     display: flex
@@ -144,7 +145,7 @@
     left: 12px
 .footer-contacts .email a
   &:hover
-    text-decoration none
+    text-decoration-color rgba(255,255,255,0)
     transition all 0.4s
 @media screen and (max-width: 1550px)
   .footer-nav__item

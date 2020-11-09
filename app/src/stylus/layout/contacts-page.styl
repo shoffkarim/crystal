@@ -119,12 +119,13 @@
   .requisites-item:first-child
     width: 260px
 @media screen and (max-width: 1365px)
+  .contacts-page .map-container
+    right: 0
+@media screen and (max-width: 1300px)
   .contacts-page
     main
       .container
-        max-width: 900px
-      .section-top
-        flex-direction column
+        max-width: 1120px
       .map-container
         position relative
         top: auto
@@ -133,6 +134,10 @@
       .map
         left: 0
         margin-right: auto
+        width: 550px !important
+        height: 517px !important
+      .map-wrapper
+        padding-top: 95px
   .requisites
     margin-top 0px
   .requisites-list
@@ -145,13 +150,42 @@
     max-width: none
     padding-left: 0px
     border-right none
-
+    border-bottom 1px solid #2f7dcd
+    padding-top: 20px
+  .requisites-item:first-child
+    padding-top: 0px
+  .requisites-item:last-child
+    border-bottom none
+@media(max-width: 1200px)
+  .contacts-page
+    main
+      .container
+        max-width: 950px
+      .map
+        left: 0
+        margin-right: auto
+        width: 430px !important
+        height: 404px !important
 @media screen and (max-width: 1000px)
   .contacts-page
     main
       .container
         max-width: 800px
+      .section-top
+        flex-direction column
+      .map
+        width: 700px !important
+        height: 658px !important
+      .map-wrapper
+        right: 0
+        left: 0
+        padding-top: 15px
 
+  .contacts-page .buildings-list
+    max-width: none
+  .contacts-page .building
+    max-width: none
+    width: calc(100% / 3 - 20px)
 @media screen and (max-width: 868px)
   .contacts-page
     main
@@ -163,17 +197,36 @@
     main
       .container
         max-width: 550px
+      .map
+        width 540px !important
+        height: 507px !important
+      .map-container
+        height: 507px
 
 @media screen and (max-width: 600px)
   .contacts-page
     main
       .container
         max-width: 400px
+      .map
+        width 400px !important
+        height: 376px !important
+      .map-container
+        height: 376px
+  .contacts-page .building
+    width: calc(100% / 2 - 20px)
 
 @media screen and (max-width: 450px)
   .contacts-page
     main
       .container
         max-width: 300px
+      .map
+        width 300px !important
+        height: 282px !important
+      .map-container
+        height: 282px
+  .contacts-page .building
+    width: 100%
   .requisites
     padding: 48px 20px 38px 22px

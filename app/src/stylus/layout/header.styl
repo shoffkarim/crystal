@@ -137,11 +137,17 @@
     width: 13px
 .header-nav__tel
   font-weight 700
-.header-nav__callback,.header-nav__email
+.header-nav__email
   span
-    border-bottom 1px dotted #333333
+    border-bottom 1px solid #333333
     &:hover
-      border-bottom 1px dotted rgba(0,0,0,0)
+      border-bottom 1px solid rgba(0,0,0,0)
+      transition all 0.4s
+.header-nav__callback
+  span
+    border-bottom 1px dashed #333333
+    &:hover
+      border-bottom 1px dashed rgba(0,0,0,0)
       transition all 0.4s
 
 .video-wrapper
@@ -521,8 +527,11 @@
     .nav-item
       font-size: 15px;
       line-height: 23px;
+      margin-bottom 10px
       .nav-item__href
         color: #ffffff
+        path
+          fill: #ffffff
     .nav-menu
       padding-bottom: 20px
       border-bottom 1px solid #2f7dcd
@@ -530,8 +539,11 @@
         font-size 24px
         font-weight 600
         margin-bottom 15px
+
     .nav-info
       padding-top: 20px
+      .nav-item__href
+        padding-left: 25px
   &-container
     margin: 100px auto
     padding-left: 50px
@@ -561,3 +573,18 @@
     transition all 0.4s
   .burger-close
     display: block
+  .header-nav__email
+    span
+      border-bottom 1px solid #ffffff
+      &:hover
+        border-bottom 1px solid rgba(0,0,0,0)
+        transition all 0.4s
+  .header-nav__callback
+    span
+      border-bottom 1px dashed #ffffff
+      &:hover
+        border-bottom 1px dashed rgba(0,0,0,0)
+        transition all 0.4s
+@media screen and (min-width: 1550px)
+  .header
+    min-height: 110vh

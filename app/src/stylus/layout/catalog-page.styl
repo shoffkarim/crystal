@@ -1,4 +1,6 @@
 .inner.catalog-page
+  .nav__button-meat, .nav__button::after, .nav__button:before
+    background-color: #ffffff
   .header
     background-image url('/app/build/img/header-background2.jpg')
     background-position center
@@ -22,12 +24,15 @@
         common-text()
         color: #ffffff
         padding-bottom: 5px
-      &__href.active
-        border-bottom: 1px solid rgba(255, 255, 255, 1)
+        border-bottom 1px solid rgba(255, 255, 255, 0)
         transition all 0.4s
         &:hover
           border-bottom 1px solid rgba(255, 255, 255, 0.4)
           transition all 0.4s
+      &__href.active
+        border-bottom: 1px solid rgba(255, 255, 255, 1)
+        transition all 0.4s
+
 
 .inner-page
   .container
@@ -88,7 +93,7 @@
   border: 1px solid #d0e1f4
 .choices[data-type*=select-one]:after
   content: ""
-  background-image url('/app/build/img/arrow.svg')
+  background-image url('/app/build/img/catalog-arrow.svg')
   width: 14px
   height: 8px
   position absolute
@@ -185,6 +190,24 @@
         border-bottom 2px solid #d0e1f4
         td
           border-bottom none
+.catalog-table__wrapper
+  &::-webkit-scrollbar
+    width: 4px;
+  &::-webkit-scrollbar-button
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height: 10px
+  &::-webkit-scrollbar-thumb
+    border-radius: 3px;
+    background-color:#aecdec;
+    transition all 0.3s
+  &::-webkit-scrollbar-track
+    background-color: #f1f7fd;
+  &::-webkit-scrollbar-thumb:hover
+    background-color:#126bc6;
+    transition all 0.3s
+
 @media screen and (max-width: 1500px)
   .inner-page
     .container
@@ -201,6 +224,8 @@
   .inner-page
     .container
       max-width: 900px
+      padding-top: 60px
+      padding-bottom: 60px
   .inner.catalog-page .tubes-item
     margin-right: 20px;
   .inner.catalog-page .tubes-list
@@ -219,7 +244,10 @@
   .choices
     width: 180px
   .inner.catalog-page .tubes-list
-    flex-direction column
+    flex-wrap: wrap
+    justify-content: center
+  .inner.catalog-page .tubes-item
+    margin-bottom 15px
 @media screen and (max-width: 767px)
   .inner-page
     .container
@@ -237,8 +265,14 @@
   .inner-page
     .container
       max-width: 400px;
+  .inner.catalog-page .tubes-list
+    flex-direction column
+    justify-content: flex-start
+  .inner.catalog-page .tubes-item
+    margin-bottom 15px
 @media screen and (max-width: 450px)
   .inner-page
     .container
       max-width: 300px;
       padding: 30px 10px
+
