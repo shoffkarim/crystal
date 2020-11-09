@@ -34,4 +34,5 @@ class PopUpCallback {
   }
 }
 
-export { PopUpCallback }
+// eslint-disable-next-line import/prefer-default-export
+export { PopUpCallback };

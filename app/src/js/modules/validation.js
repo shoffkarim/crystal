@@ -56,6 +56,17 @@ class Validation {
               i.classList.remove("error");
             }
             break;
+          case "checkbox":
+            // eslint-disable-next-line no-case-declarations, no-useless-escape
+            let check = i.checked;
+            if (!check) {
+              i.classList.add("error");
+              i.classList.remove("good");
+            } else {
+              i.classList.add("good");
+              i.classList.remove("error");
+            }
+            break;
           default:
             break;
         }
@@ -63,5 +74,5 @@ class Validation {
     });
   }
 }
-
-export {Validation}
+// eslint-disable-next-line import/prefer-default-export
+export { Validation };
