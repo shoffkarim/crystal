@@ -121,6 +121,7 @@
     display: flex
     align-items: center
     justify-content: flex-start
+    cursor pointer
   input
     display none
   .fake-checkbox
@@ -140,9 +141,9 @@
       position absolute
       top: 4px
       left: 1px
-      display none
-// .pd-checkbox input[type="checkbox"]:checked+.fake-checkbox:before{
-//   display: block
+      opacity 0
+.pd-checkbox input:checked + .fake-checkbox:before
+  opacity: 1
 .popup.callback.popup--hidden
   width: 0px
   padding: 0px
@@ -168,6 +169,8 @@
   .popup.callback
     width: 650px;
     right: calc(50% - 325px);
+  .pd-checkbox .fake-checkbox
+    width: 19px
 @media screen and (max-width: 767px)
   .popup.callback
     width: 550px;
@@ -181,6 +184,8 @@
     width: 400px;
     right: calc(50% - 200px);
     padding: 25px
+  .pd-checkbox .fake-checkbox
+    width: 26px
 @media screen and (max-width: 600px)
   .popup.callback
     width: 300px;
