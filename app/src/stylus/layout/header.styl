@@ -302,6 +302,8 @@
   transition all 0.4s
 .nav-menu .nav-item__href.active
   color: #126bc6;
+.mobile-header-text
+  display none
 @media screen and (max-width: 1760px)
   .video-wrapper
     margin-left 0
@@ -315,15 +317,16 @@
     width: 515px
     height: 487px
     margin-left: 48px
+    top: 58%
+    animation: videoOpening1550px 2s ease-in-out
   .header__middle
-    margin-top: 0
+    margin-top: 75px
   .header-top__logo
     width: 100px
   .video-container
-    max-width: none
-    min-width: auto
-  .video-container
-    margin-right: 13px
+    max-width: 525px
+    min-width: 525px
+    margin-right: 50px
   .text-img
     font-size 98px
   .header__middle .common-text
@@ -337,10 +340,15 @@
     padding: 20px 30px
 
 
-@media screen and (max-width: 1365px)
+@media screen and (max-width: 1300px)
+  .video-container
+    max-width: 450px
+    min-width: 450px
+    margin-right: 20px
   .video-wrapper
-    width: 350px
-    height: 331px
+    width: 450px
+    height: 426px
+    animation: videoOpening1300px 2s ease-in-out
   .text-container svg
     width: 450px
     height: 280px
@@ -361,10 +369,15 @@
     line-height 20px
   .header-nav__address img, .header-nav__email img, .header-nav__tel img
     top: 0
-  .header__middle
-    flex-direction column
+  .video-container
+    max-width: 350px
+    min-width: 350px
+    margin-right: 0px
   .video-wrapper
+    width: 350px
+    height: 331px
     margin-left auto
+    animation: videoOpening1000px 2s ease-in-out
   .header-top__logo
     padding-top 35px
 @media screen and (max-width: 868px)
@@ -378,9 +391,28 @@
     margin-top: 10px
   .btn-cookie__disagree
     margin-left: 0
+  .header__middle
+    flex-direction column-reverse
+    margin-top: 0
+  .header__middle  .mobile-header-text
+    display: block
+    margin-top: 170px
+    margin-left: auto
+    margin-right auto
+  .video-container
+    margin-top: 55px
+    margin-left: auto
+    margin-right auto
+  .text-container
+    margin-left: auto
+    margin-right auto
+  .text-container svg
+    margin-left: -15px
+  .text-container p
+    display: none
 @media screen and (max-width: 767px)
-  .header__middle .common-text
-    margin-left: 14px
+  .text-container svg
+    margin-left: 0px
   .curcle-link
     position relative
   .nav__button
@@ -390,6 +422,9 @@
   .burger-menu
     .header-nav__address, .header-nav__email, .nav-menu
       display block
+  .img-in-text
+    animation: none
+    width: 1005px
 @media screen and (max-width: 600px)
   .text-container svg
     width: 400px;
@@ -397,17 +432,40 @@
     margin-left: 0
   .cookie
     max-width: 400px
+  .header-nav__callback
+    margin-right 10px
+
 @media screen and (max-width: 450px)
   .video-wrapper
     width: 300px;
     height: 284px;
+    animation: videoOpening450px 2s ease-in-out
+  .video-container
+    max-width: 300px
+    min-width: 300px
+    margin-top: 90px
   .text-container svg
     width: 300px
+    height: 150px
   .cookie
     left: 10px
     max-width: 300px
   .btn-cookie
     padding: 15px 15px
+  .nav-item__href.header-nav__callback
+    display: none
+  .header
+    padding-bottom: 120px
+  .banner.special-banner
+    position absolute
+    bottom: -100px
+    img
+      right: auto
+      left: 0
+  .special-banner__text
+    margin-right: 0
+    margin-left: auto
+
 
 .img-in-text
   animation: imgInText infinite 10s ease-in-out backwards
