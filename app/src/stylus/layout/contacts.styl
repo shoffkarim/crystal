@@ -218,6 +218,10 @@
     right: 0
   .advantages-item p
     max-width: none
+@media screen and (max-width: 1200px)
+  .map
+    width: 565px!important;
+    height: 531px!important;
 @media screen and (max-width: 1000px)
   .contacts-heading
     line-height 39px
@@ -238,6 +242,21 @@
     left: auto
     margin-left auto
     margin-right auto
+  .building
+    width: calc(100% / 3 - 20px)
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+  .buildings-list
+    flex-direction row
+    justify-content: space-between
+  .advantages
+    background-color #126bc6
+  .advantages-back
+    display none
+  .advantages-heading
+    font-size 24px
+    line-height 30px
 @media screen and (max-width: 767px)
   .map
     width: 549px !important
@@ -252,7 +271,11 @@
     height: 379px !important
   .map-wrapper
     height 380px
-
+  .buildings-list
+    flex-direction column
+  .building
+    width: 100%
+    margin-right: 0px
 @media screen and (max-width: 450px)
   .map
     width: 300px !important;
@@ -261,3 +284,4 @@
     margin-top: 40px;
     padding: 53px 15px;
     padding-bottom: 87px;
+

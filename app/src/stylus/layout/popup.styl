@@ -140,7 +140,9 @@
       position absolute
       top: 4px
       left: 1px
-
+      display none
+// .pd-checkbox input[type="checkbox"]:checked+.fake-checkbox:before{
+//   display: block
 .popup.callback.popup--hidden
   width: 0px
   padding: 0px
@@ -160,6 +162,8 @@
     flex-direction column
   .callback-form__wrapper
     max-width: none
+  .callback__heading
+    font-size 24px
 @media screen and (max-width: 868px)
   .popup.callback
     width: 650px;
@@ -181,5 +185,7 @@
   .popup.callback
     width: 300px;
     right: calc(50% - 150px);
+  .btn-popup__close
+    right: 0
 .callback-form__block input.error
   border 1px solid #ed1c24

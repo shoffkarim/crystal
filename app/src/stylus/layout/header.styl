@@ -357,12 +357,6 @@
     margin-left: 60px
   .banner.special-banner
     bottom: -70px
-  .partners-list__item
-    width: 100%
-  .partners-list__item:first-child
-    width: 100%
-  .partners-list__item:last-child
-    width: 100%
 @media screen and (max-width: 1000px)
   .nav-item
     font-size 12px
@@ -380,6 +374,8 @@
     animation: videoOpening1000px 2s ease-in-out
   .header-top__logo
     padding-top 35px
+  .header-nav__tel svg
+    top: 1px
 @media screen and (max-width: 868px)
   .nav-item
     margin-right: 10px
@@ -527,22 +523,35 @@
       line-height: 23px;
       .nav-item__href
         color: #ffffff
+    .nav-menu
+      padding-bottom: 20px
+      border-bottom 1px solid #2f7dcd
+      .nav-item
+        font-size 24px
+        font-weight 600
+        margin-bottom 15px
+    .nav-info
+      padding-top: 20px
   &-container
     margin: 100px auto
-    max-width: 310px;
+    padding-left: 50px
+    padding-right: 50px
     width: 100%
-    text-align: center;
+    display: flex
+    flex-direction: column-reverse
     opacity 0
     transition all 0.4s
   &-close
     position absolute
     top: 50px
-    left: 50px
+    right: 50px
+    display: none
     opacity 1
     transition: all 0.4s
     &:hover
       opacity 0.6
       transition: all 0.4s
+
 
 .burger-menu.js-menu__open
   width: 100%
@@ -550,3 +559,5 @@
   .burger-container
     opacity 1
     transition all 0.4s
+  .burger-close
+    display: block

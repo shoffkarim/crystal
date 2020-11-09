@@ -92,9 +92,14 @@
       padding-left: 57px;
 @media screen and (max-width: 1365px)
   .partners-list
-    flex-direction column
+    flex-wrap: wrap
   .partners-list__item
     border: none
+    width: 50%
+    &:first-child
+      width: 50%
+    &:last-child
+      width: 50%
   .partners-list__item
     padding-left: 0px
     margin-bottom 20px
@@ -105,6 +110,17 @@
     max-width 460px
   .company-text
     max-width: 400px;
+@media screen and (max-width: 767px)
+  .partners-list
+    flex-direction: column
+  .partners-list__item
+    width: 100%
+    &:first-child
+      width: 100%
+    &:last-child
+      width: 100%
+  .company-heading, .company-text
+    max-width: none
 @media screen and (max-width: 450px)
   .company-heading
     max-width: 300px

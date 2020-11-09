@@ -3,7 +3,7 @@
   padding-top 65px
   padding-bottom 77px
   &-section
-    margin-right 40px
+    margin-right 20px
     width: 330px
     &:last-child
       margin-right 0
@@ -130,6 +130,7 @@
   width: 37px
   height: 37px
   transition all 0.4s
+  z-index 999
   &:hover
     background-color #3b8bdc
     transition all 0.4s
@@ -161,9 +162,61 @@
     margin-bottom 20px
   .footer-section:last-child
     margin-right auto
+  .footer-section.nav-left
+    order: 1
+    width: calc(50% - 20px)
+  .footer-section.nav-right
+    order: 2
+    width: calc(50% - 20px)
+  .footer-section.footer-contacts
+    order: 3
+    width: 100%
+    border-top: 1px solid #2f7dcd
+    border-bottom: 1px solid #2f7dcd
+    padding-top: 20px
+    padding-bottom: 20px
+  .footer-section.rights
+    order: 4
+    width: 100%
+    display: flex
+    flex-direction: row
+  .footer-contacts__list.contacts-list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  .contacts-list__item.tel
+    width: calc(50% - 10px)
+  .contacts-list__item.address
+    width: calc(50% - 10px)
+  .contacts-list__item.email
+    width: calc(50% + 10px)
+    margin-left: auto
+  .developer-copyright, .rights-company
+    width: calc(50% - 20px)
+
+
+
 @media screen and (max-width: 767px)
   .footer-section
     width: 50%
+@media screen and (max-width: 600px)
+  .contacts-list__item.tel
+    width: auto
+  .contacts-list__item.address
+    width: auto
+  .contacts-list__item.email
+    width: auto
+    margin-left: 0
+    margin-right: auto
+  .footer-contacts__list.contacts-list
+    flex-direction column
+    align-items: flex-start
+@media screen and (max-width: 400px)
+  .footer-section.rights
+    flex-wrap: wrap
+  .developer-copyright, .rights-company
+    width: 100%
+    margin-bottom 15px
 .btn-up
   opacity 1
   visibility visible
