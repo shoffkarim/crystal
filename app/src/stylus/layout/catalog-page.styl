@@ -122,24 +122,23 @@
 .choices__list--dropdown .choices__list
   padding-right 10px
   &::-webkit-scrollbar
-    width: 4px;
+    width: 8px;
   &::-webkit-scrollbar-button
     background-image:url('');
     background-repeat:no-repeat;
     width:5px;
     height: 10px
   &::-webkit-scrollbar-thumb
-    border-radius: 3px;
-    background-color:#aecdec;
+    background: rgb(174,205,236);
+    background: linear-gradient(90deg, rgba(174,205,236,1) 50%, rgba(255,255,255,1) 50%);
     transition all 0.3s
   &::-webkit-scrollbar-track
-    background-color: #f1f7fd;
+    background: rgb(241,247,253);
+    background: linear-gradient(90deg, rgba(241,247,253,1) 50%, rgba(255,255,255,1) 50%);
   &::-webkit-scrollbar-thumb:hover
     background-color:#126bc6;
     transition all 0.3s
 
-.choices__list--dropdown
-  padding-right 8px
 .choices[data-type*=select-one].is-open:after
   border: none
   margin-top: 0
