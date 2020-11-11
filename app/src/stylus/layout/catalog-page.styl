@@ -219,10 +219,10 @@
   .choices__list
     padding: 12px 19px 13px;
 
-@media screen and (max-width: 1365px)
+@media screen and (max-width: 1300px)
   .inner-page
     .container
-      max-width: 900px
+      max-width: 1120px
       padding-top: 60px
       padding-bottom: 60px
   .inner.catalog-page .tubes-item
@@ -230,9 +230,19 @@
   .inner.catalog-page .tubes-list
     justify-content: left
   .filter-item
-    max-width: 200px;
+    max-width: 270px;
   .choices
-    width: 200px
+    width: 270px
+@media screen and (max-width: 1200px)
+  .inner-page
+    .container
+      max-width: 950px
+  .filter-item
+    max-width: 230px;
+  .choices
+    width: 230px
+  .choices__list--dropdown .choices__item--selectable
+    padding-right 15px
 @media screen and (max-width: 1000px)
   .inner-page
     .container
@@ -247,6 +257,14 @@
     justify-content: center
   .inner.catalog-page .tubes-item
     margin-bottom 15px
+@media screen and (max-width: 868px)
+  .filter-list
+    flex-wrap: wrap
+  .filter-item
+    max-width: 300px;
+    margin-bottom: 20px
+  .choices
+    width: 300px
 @media screen and (max-width: 767px)
   .inner-page
     .container
