@@ -26,7 +26,6 @@ class Validation {
     if (document.querySelector(".btn-form")) {
       let btnSubmit = document.querySelector(".btn-form");
       btnSubmit.addEventListener("click", function (e) {
-        e.preventDefault();
         let validList = document.querySelectorAll(".js-valid[data-req=true]");
         validList.forEach(function (i) {
           let value = i.value;
@@ -41,6 +40,7 @@ class Validation {
               if (!regTel.test(value)) {
                 i.classList.add("error");
                 i.classList.remove("good");
+                e.preventDefault();
               } else {
                 i.classList.add("good");
                 i.classList.remove("error");
@@ -52,6 +52,7 @@ class Validation {
               if (!regText.test(value)) {
                 i.classList.add("error");
                 i.classList.remove("good");
+                e.preventDefault();
               } else {
                 i.classList.add("good");
                 i.classList.remove("error");
@@ -63,6 +64,7 @@ class Validation {
               if (!check) {
                 i.classList.add("error");
                 i.classList.remove("good");
+                e.preventDefault();
               } else {
                 i.classList.add("good");
                 i.classList.remove("error");

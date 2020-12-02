@@ -2,6 +2,7 @@ node_modules/
 makets/
 *.rar
 .cache
+*.zip
 app/build/*.svg
 app/build/*.png
 app/build/*.jpg
