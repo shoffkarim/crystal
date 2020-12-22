@@ -5,23 +5,25 @@ class Opening {
 
   // eslint-disable-next-line class-methods-use-this
   init() {
-    document.addEventListener("DOMContentLoaded", function () {
-      setTimeout(() => {
-        document.querySelector(".opening").classList.remove("opening");
-      }, 1000);
-    });
+    if (document.querySelector(".opening")) {
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.querySelector(".opening").classList.remove("opening");
+        }, 1000);
+      });
+    }
     window.addEventListener("scroll", function () {
       let cH = document.documentElement.clientHeight;
-      if (window.pageYOffset > cH - 400) {
+      if (window.pageYOffset > cH - 400 && document.querySelector('.btn-up')) {
         document.querySelector('.btn-up').classList.remove('btn-up__hidden');
       }
-      if (window.pageYOffset < cH - 400) {
+      if (window.pageYOffset < cH - 400 && document.querySelector('.btn-up')) {
         document.querySelector('.btn-up').classList.add('btn-up__hidden');
       }
-      if (window.pageYOffset > cH - 750) {
+      if (window.pageYOffset > cH - 750 && document.querySelector('.special-banner__text')) {
         document.querySelector('.special-banner__text').classList.add('banner-text--hidden');
       }
-      if (window.pageYOffset < cH - 750) {
+      if (window.pageYOffset < cH - 750 && document.querySelector('.special-banner__text')) {
         document.querySelector('.special-banner__text').classList.remove('banner-text--hidden');
       }
       if ((window.pageYOffset > cH - 400) && document.querySelector('.catalog')) {

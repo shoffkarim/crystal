@@ -4,8 +4,8 @@
 // sass =======
 import "../stylus/style.styl";
 
-// choices =========
-import { catalogSelect } from "./modules/choices-init";
+// // choices =========
+// import { catalogSelect } from "./modules/choices-init";
 
 import { InputMask } from "./modules/imask-init";
 import { Validation } from "./modules/validation";

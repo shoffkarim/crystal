@@ -89,9 +89,10 @@
   right: 0
 
 .building-email
-  border-bottom 1px solid #4d4d4d
+  border-bottom 1px solid rgba(77, 77, 77, 1)
   margin-left: 20px
   position relative
+  transition: all 0.4s
   &:after
     content: ""
     background-image url('/app/build/img/Mail.svg')
@@ -100,6 +101,9 @@
     position absolute
     top: 6px
     left: -19px
+  &:hover
+    border-bottom 1px solid rgba(77, 77, 77, 0)
+    transition: all 0.4s
 @media screen and (max-width: 1500px)
   .contacts-page
     main

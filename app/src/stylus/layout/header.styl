@@ -105,13 +105,18 @@
   color: #000000
 .video
   &-container
-    max-width: 730px
-    min-width: 730px
+    min-width: 715px
+    min-height: 724px
     margin-right 40px
+    margin-left: 52px
     position relative
+    overflow hidden
+    background-color #fff
   &-wrapper
+    -webkit-clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+    clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
     margin: 0 auto
-    animation: videoOpening 2s ease-in-out
+    animation: videoOpening 2.5s ease-in-out
 
 .main-h1
   font-family "Inter"
@@ -161,21 +166,17 @@
   height: 724px;
   overflow: hidden;
   z-index: 10;
-  margin-left: 52px;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   video
     position absolute
-    width: 100%
-    height: 100%
+    width: 713px;
+    height: 723px;
     top: 0
     left: 0
     z-index 5
     object-fit: cover
+    position: relative;
     -webkit-clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
     clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
-    position: relative;
   img
     position absolute
     width: 100%
@@ -331,16 +332,16 @@
   .video-wrapper
     width: 515px
     height: 487px
-    margin-left: 48px
-    top: 58%
-    animation: videoOpening1550px 2s ease-in-out
+    video
+      width: 513px
+      height: 486px
   .header__middle
     margin-top: 75px
   .header-top__logo
     width: 100px
   .video-container
-    max-width: 525px
-    min-width: 525px
+    min-width: 515px
+    min-height: 487px
     margin-right: 50px
   .text-img
     font-size 98px
@@ -355,13 +356,16 @@
 
 @media screen and (max-width: 1300px)
   .video-container
-    max-width: 450px
     min-width: 450px
-    margin-right: 20px
+    min-height: 426px
+    margin-right: 0px
+    margin-left: 25px
   .video-wrapper
     width: 450px
     height: 426px
-    animation: videoOpening1300px 2s ease-in-out
+    video
+      width: 449px
+      height: 425px
   .text-container svg
     width: 450px
     height: 280px
@@ -375,14 +379,16 @@
   .header-nav__address img, .header-nav__email img, .header-nav__tel img
     top: 0
   .video-container
-    max-width: 350px
     min-width: 350px
+    min-height: 331px
     margin-right: 0px
   .video-wrapper
     width: 350px
     height: 331px
     margin-left auto
-    animation: videoOpening1000px 2s ease-in-out
+    video
+      width: 349px
+      height: 330px
   .header-top__logo
     padding-top 35px
   .header-nav__tel svg
@@ -403,11 +409,11 @@
     margin-top: 0
   .header__middle  .mobile-header-text
     display: block
-    margin-top: 170px
+    margin-top: 40px
     margin-left: auto
     margin-right auto
   .video-container
-    margin-top: 55px
+    margin-top: -60px
     margin-left: auto
     margin-right auto
   .text-container
@@ -446,11 +452,13 @@
   .video-wrapper
     width: 300px;
     height: 284px;
-    animation: videoOpening450px 2s ease-in-out
+    video
+      width: 299px
+      height: 283px
   .video-container
-    max-width: 300px
     min-width: 300px
-    margin-top: 90px
+    min-height: 284px
+    margin-top: -25px
   .text-container svg
     width: 300px
     height: 150px
@@ -474,6 +482,8 @@
   .special-banner__text
     margin-right: 0
     margin-left: auto
+    opacity: 1;
+    visibility: visible;
 
 
 .img-in-text

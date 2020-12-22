@@ -111,6 +111,10 @@
   color: #ffffff
   padding: 10px 40px
   letter-spacing: 1px
+  transition all 0.4s
+  &:hover
+    background-color #2a83dd
+    transition all 0.4s
 .pd
   a
     color #126bc6
@@ -140,13 +144,14 @@
       height 8px
       position absolute
       top: 4px
-      left: 1px
+      left: 2px
       opacity 0
 .pd-checkbox input:checked + .fake-checkbox:before
   opacity: 1
 .pd-checkbox .error + .fake-checkbox
   border 1px solid #ed1c24
 .popup.callback.popup--hidden
+  right: 0
   width: 0px
   padding: 0px
   opacity 0
@@ -196,3 +201,5 @@
     right: 0
 .callback-form__block input.error
   border 1px solid #ed1c24
+.callback-form__block label.common-text.common-text__black
+  opacity: 0.5
