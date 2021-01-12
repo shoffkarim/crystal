@@ -18,6 +18,9 @@ class Validation {
           label.style.display = "block";
         }
       });
+      label.addEventListener("click", function () {
+        input.focus();
+      });
     });
   }
 

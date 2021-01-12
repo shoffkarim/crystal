@@ -24,14 +24,14 @@ class PopUpCallback {
         popup.classList.remove("popup--hidden");
       });
 
-      let btnPopUpClose = document.querySelector(".btn-popup__close");
-      btnPopUpClose.addEventListener("click", function (e) {
+      let btnsPopUpClose = document.querySelectorAll(".btn-popup__close");
+      btnsPopUpClose.forEach((btnPopUpClose) => btnPopUpClose.addEventListener("click", function (e) {
         e.preventDefault();
         let overlay = document.querySelector(".popup-overlay");
         let popup = document.querySelector(".popup.callback");
         overlay.classList.add("popup--hidden");
         popup.classList.add("popup--hidden");
-      });
+      }));
     }
   }
 }

@@ -611,8 +611,9 @@ C13.101862,10.7725,13.101862,9.9951,12.6476612,9.5408001z" />
     </div>
   </div>
   <div class="popup-overlay popup--hidden"></div>
-  <div class="popup callback popup--hidden">
-    <button class="btn btn-popup__close" type="submit"><img src="img/popup-close.png" alt="закрыть"></button>
+  <div class="popup callback callback-form popup--hidden">
+    <button class="btn btn-popup__close btn-popup__close--white" type="submit"><img src="img/popup-close.png" alt="закрыть"></button>
+    <button class="btn btn-popup__close btn-popup__close--blue " type="submit"><img src="img/popup-close__blue.png" alt="закрыть"></button>
     <p class="callback__heading common-text common-text__black">Заказать обратный звонок</p>
     <p class="callback__text common-text common-text__black"><span>Пожалуйста, заполните поля ниже, чтобы связаться с
         нами.</span></p>
@@ -645,14 +646,25 @@ C13.101862,10.7725,13.101862,9.9951,12.6476612,9.5408001z" />
         <div class="pd-checkbox">
           <label for="checkbox-pd">
             <input type="checkbox" id="checkbox-pd" class="js-valid" data-req="true"><span class="fake-checkbox"></span>
-            <p class="pd common-text common-text__black"><span>Даю согласие на обработку </span><a href="">персональных
-                данных</a></p>
+            <p class="pd common-text common-text__black">
+              <span>Даю согласие на обработку <a href="">персональных данных</a></span>
+              </p>
           </label>
         </div>
         <button class="btn btn-form" type="submit">Отправить</button>
       </div>
     </form>
   </div>
+  <!-- <div id="successfully" class="popup callback result">
+    <button class="btn btn-popup__close" onclick="popup_close()"><img src="<?=SITE_TEMPLATE_PATH;?>/assets/img/popup-close.png" alt="закрыть"></button>
+    <p class="callback__heading common-text common-text__black">Спасибо!</p>
+    <p class="callback__text common-text common-text__black"><span>Ваше сообщение успешно отправлено.</span></p>
+  </div>
+  <div id="unsuccessfully" class="popup callback popup--hidden">
+    <button class="btn btn-popup__close" onclick="popup_close()"><img src="<?=SITE_TEMPLATE_PATH;?>/assets/img/popup-close.png" alt="закрыть"></button>
+    <p class="callback__heading common-text common-text__black">Сообщение отправлено не было</p>
+    <p class="callback__text common-text common-text__black"><span id="error_popup">Невидимая система защиты идентифицировала вас как Робота. Попробуйте отправить сообщение позже!.</span></p>
+  </div> -->
   <script type="text/javascript">
     ymaps.ready(init);
     function init() {
