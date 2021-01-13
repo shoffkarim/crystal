@@ -140,6 +140,10 @@
     background-color #f1f7fd
     position relative
     margin-right 10px
+    min-width 17px
+    min-height 17px
+    max-width 17px
+    max-height 17px
     &:before
       content: ""
       background-image url('/app/build/img/checkbox-arrow.png')
@@ -183,19 +187,14 @@
   .popup.callback
     width: 650px;
     right: calc(50% - 325px);
-  .pd-checkbox .fake-checkbox
-    width: 19px
-@media screen and (max-width: 767px)
-  .popup.callback
-    width: 550px;
-    right: calc(50% - 275px);
   .callback-bottom
     flex-direction column
   .btn-form
     margin-top 20px
-@media screen and (max-width: 600px)
-  .pd-checkbox .fake-checkbox
-    width: 26px
+@media screen and (max-width: 767px)
+  .popup.callback
+    width: 550px;
+    right: calc(50% - 275px);
 @media screen and (max-width: 650px)
   .popup.callback-form
     width: 100%;
