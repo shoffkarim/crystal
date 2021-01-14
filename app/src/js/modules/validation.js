@@ -61,6 +61,18 @@ class Validation {
                 i.classList.remove("error");
               }
               break;
+            case "email":
+              // eslint-disable-next-line no-case-declarations
+              let regEmail = new RegExp(/@/);
+              if (!regEmail.test(value)) {
+                i.classList.add("error");
+                i.classList.remove("good");
+                e.preventDefault();
+              } else {
+                i.classList.add("good");
+                i.classList.remove("error");
+              }
+              break;
             case "checkbox":
               // eslint-disable-next-line no-case-declarations, no-useless-escape
               let check = i.checked;
