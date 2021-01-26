@@ -208,6 +208,14 @@
     display: block
   .btn-popup__close--white
     display: none
+  .popup.callback.result .btn-popup__close--white
+    display: block
+    background-color #0660bf
+  .popup.callback.result .btn-popup__close--blue
+    display: none
+  .popup.callback.result
+    width: 400px;
+    left: calc(50% - 200px);
 @media screen and (max-width: 400px)
   .popup.callback-form
     overflow-y scroll
@@ -221,6 +229,14 @@
     top: 15px;
     right: 15px;
     background-color: #fff;
+  .popup.callback.result .btn-popup__close--white
+    display: block
+    background-color #0660bf
+  .popup.callback.result .btn-popup__close--blue
+    display: none
+  .popup.callback.result
+    width: 320px;
+    left: calc(50% - 160px);
 .callback-form__block input.error
   border 1px solid #ed1c24
 .callback-form__block label.common-text.common-text__black
@@ -231,6 +247,16 @@
 .popup.callback.result
   width: 450px
   left: calc(50% - 225px)
+  background-color #0660bf
+  .callback__heading
+    color: #fff
+  .callback__text
+    color: #fff
+  .btn-popup__close--white
+    display: none
+  .btn-popup__close--blue
+    display: block
+    background-color rgba(255, 255, 255, 0)
 @media screen and (max-height: 750px)
   .popup.callback-form
     overflow-y scroll
@@ -244,4 +270,9 @@
     top: 15px;
     right: 15px;
     background-color: #fff;
+  .popup.callback.result .btn-popup__close--white
+    display: block
+    background-color #0660bf
+  .popup.callback.result .btn-popup__close--blue
+    display: none
 
