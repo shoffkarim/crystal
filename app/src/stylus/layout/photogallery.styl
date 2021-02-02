@@ -1,0 +1,105 @@
+.photogallery
+  &-wrapper
+    max-width: 1440px
+    margin: 0 auto
+    margin-top: 60px
+    margin-bottom 88px
+    display: flex
+    flex-direction row
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 1550px)
+      max-width none
+      width: 100%
+      margin-bottom 50px
+    @media (max-width: 450px)
+      justify-content: center
+  &-item
+    margin-bottom 44px
+    position relative
+    max-width: 264px
+    @media (max-width: 1550px)
+      max-width 234px
+    @media (max-width: 1200px)
+      max-width 210px
+    @media (max-width: 600px)
+      max-width 175px
+    @media (max-width: 450px)
+      max-width 100%
+    &::before
+      content: ""
+      display: block
+      width: 84px
+      height: 84px
+      background-image url('/app/build/img/photogallery-zoom.png')
+      position absolute
+      top: 90px;
+      left: calc(50% - 42px);
+      opacity 0
+      visibility hidden
+      transition all 0.4s
+    &:hover
+      &::before
+        opacity 1
+        visibility visible
+        transition all 0.4s
+    &__text
+      text-align left
+      margin-top: 12px
+    img
+      width: 100%
+.glightbox-clean .gslide-description
+  background: transparent
+.glightbox-clean .gslide-title
+  font-family "Inter", sans-serif
+  font-size 15px
+  font-weight 400
+  line-height 23px
+  color: #ffffff
+  text-align center
+.glightbox-clean .gslide-desc
+  font-family "Inter", sans-serif
+  font-size 15px
+  font-weight 400
+  line-height 23px
+  color: #ffffff
+  text-align center
+.glightbox-mobile .glightbox-container .gslide-desc
+  color: #ffffff
+.glightbox-mobile .goverlay
+  background:  rgba(6,96,191,1);
+.glightbox-mobile .glightbox-container .gslide-description
+  background transparent
+.glightbox-clean .gclose
+  background: transparent
+@media (min-width: 992px)
+  .glightbox-clean .gclose
+    opacity: .7;
+    background: transparent
+    transition all 0.4s
+@media (min-width: 769px)
+  .goverlay
+    background: rgba(6,96,191,1);
+  .glightbox-clean .gslide-media
+    -webkit-box-shadow: none
+    box-shadow: none
+  .glightbox-clean .gclose:hover
+    background-color: transparent
+    opacity 1
+    transition all 0.4s
+  .glightbox-clean .gnext
+    background-color: #257ed8
+    border-radius: 0;
+    width: 50px
+    transition all 0.4s
+    &:hover
+      background-color #095eb5
+      transition all 0.4s
+  .glightbox-clean .gprev
+    background-color: #257ed8
+    border-radius: 0;
+    width: 50px
+    transition all 0.4s
+    &:hover
+      background-color #095eb5
+      transition all 0.4s
