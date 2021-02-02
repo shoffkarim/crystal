@@ -8,6 +8,7 @@
     right: 0
     background-color #0660bf
     z-index 100
+    visibility visible
     transition all 1s
 .popup
   z-index 120
@@ -163,9 +164,11 @@
   width: 0px
   padding: 0px
   opacity 0
+  visibility hidden
   transition: opacity 0.4s, width 0.3s
 .popup-overlay.popup--hidden
   width: 0%
+  visibility hidden
   transition: all 1s
 @media screen and (max-width: 1365px)
   .popup.callback
@@ -247,16 +250,40 @@
 .popup.callback.result
   width: 450px
   left: calc(50% - 225px)
-  background-color #0660bf
+  background-color #fff
+  text-align center
+  -webkit-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.13);
+  box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.13);
+  z-index 101
   .callback__heading
-    color: #fff
+    color: #000
   .callback__text
-    color: #fff
+    color: #000
   .btn-popup__close--white
     display: none
   .btn-popup__close--blue
     display: block
     background-color rgba(255, 255, 255, 0)
+    display: block;
+  .btn-popup-res__close
+    background-color: #0660bf;
+    font-family: Inter,sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    margin-top: 25px
+    transition all 0.4s
+  .btn-popup-res__close:hover
+    background-color: #2a83dd;
+    transition all 0.4s
+
+.popup-overlay.popup-overlay--res
+  background-color transparent
 @media screen and (max-height: 750px)
   .popup.callback-form
     overflow-y scroll

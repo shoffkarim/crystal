@@ -204,36 +204,55 @@
   align-items: center
   opacity 1
   transition opacity 2s 0.8s, color 0.4s
-  width: 197px
+  width: 157px
   height: 87px
   z-index 100
-  img
-    position absolute
-    top: 0
-    right: 0
   &:hover
     .special-banner__text
       color: #0660bf
       transition all 0.4s
     img
       animation: top-down infinite 2s
-
+.special-banner__wrapper
+  width: 77px;
+  height: 72px;
+  background-color #0d5fb3
+  object-fit: cover
+  position: relative;
+  -webkit-clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+  clip-path: polygon(19.898477% 0%,80.913705% 0%,100% 25.621621%,50% 100%,0% 25.621621%)
+  overflow hidden
+  position relative
+.special-banner__gradient
+  width: 100%
+  height: 100%
+  background: rgb(13,95,179);
+  background: linear-gradient(90deg, rgba(13,95,179,1) 0%, rgba(71,205,244,1) 50%, rgba(13,95,179,1) 100%);
+  position absolute
+  transform: rotate(54deg)
+  top: -10px
+  left: 5px
+  animation: gradient-top-down infinite 3.5s ease-in-out
 .special-banner__text
   font-family "Inter", sans-serif
   font-weight 700
   color: #000000
   text-transform uppercase
+  text-align: right
   max-width 110px
   font-size 11px
   line-height 18px
-  margin-top 10px
-  margin-right 10px
+  margin-top 0px
   letter-spacing: 1px
   transition all 0.4s
   margin-right auto
   opacity 1
   visibility visible
   transition all 0.4s
+.special-banner__icon
+  position absolute
+  top: -2px
+  right: 17px
 .cookie
   flex-direction row
   background-color #f1f7fd
@@ -479,8 +498,8 @@
     position absolute
     bottom: -100px
     img
-      right: auto
-      left: 0
+      right: 17px;
+      left: auto;
   .special-banner__text
     margin-right: 0
     margin-left: auto
