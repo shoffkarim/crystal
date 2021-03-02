@@ -486,16 +486,28 @@ C13.101862,10.7725,13.101862,9.9951,12.6476612,9.5408001z" />
         <div class="partners">
           <p class="partners-heading">Мы предлагаем нашим партнерам</p>
           <ul class="partners-list">
-            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon.png" alt="alt">
+            <li class="partners-list__item partners-item">
+              <div class="partners-item__img-wrapper">
+                <img src="img/partnerts-icons/icon.png" alt="alt">
+              </div>
               <p class="common-text common-text__white">Возможность отсрочки платежей до 90 дней</p>
             </li>
-            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-1.png" alt="alt">
+            <li class="partners-list__item partners-item">
+              <div class="partners-item__img-wrapper">
+                <img src="img/partnerts-icons/icon-1.png" alt="alt">
+              </div>
               <p class="common-text common-text__white">Доставку продукции автотранспортом и вагонами</p>
             </li>
-            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-2.png" alt="alt">
+            <li class="partners-list__item partners-item">
+              <div class="partners-item__img-wrapper">
+                <img src="img/partnerts-icons/icon-2.png" alt="alt">
+              </div>
               <p class="common-text common-text__white">Минимальные сроки отгрузки</p>
             </li>
-            <li class="partners-list__item partners-item"><img src="img/partnerts-icons/icon-3.png" alt="alt">
+            <li class="partners-list__item partners-item">
+              <div class="partners-item__img-wrapper">
+                <img src="img/partnerts-icons/icon-3.png" alt="alt">
+              </div>
               <p class="common-text common-text__white">Внимание к пожеланиям и запросам наших заказчиков</p>
             </li>
           </ul>
@@ -615,50 +627,58 @@ C13.101862,10.7725,13.101862,9.9951,12.6476612,9.5408001z" />
       <button class="btn btn-cookie btn-cookie__agree" type="submit">Согласен</button>
     </div>
   </div>
+
   <div class="popup-overlay popup--hidden"></div>
   <div class="popup callback callback-form popup--hidden">
-    <button class="btn btn-popup__close btn-popup__close--white" type="submit"><img src="img/popup-close.png" alt="закрыть"></button>
-    <button class="btn btn-popup__close btn-popup__close--blue " type="submit"><img src="img/popup-close__blue.png" alt="закрыть"></button>
-    <p class="callback__heading common-text common-text__black">Заказать обратный звонок</p>
-    <p class="callback__text common-text common-text__black"><span>Пожалуйста, заполните поля ниже, чтобы связаться с
-        нами.</span></p>
-    <p class="callback__text common-text common-text__black"><span class="star">*</span><span> — поля со звёздочкой
-        обязательны для заполнения.</span></p>
-    <form class="callback__form callback-form" action="">
-      <div class="callback-form__container">
-        <div class="callback-form__wrapper">
-          <div class="callback-form__block">
-            <input class="js-anim js-valid common-text common-text__black" type="text" data-req="true">
-            <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
+    <div class="popup-overflow">
+      <div class="popup-callback__wrapper">
+        <button class="btn btn-popup__close btn-popup__close--white" type="submit"><img src="img/popup-close.png"
+            alt="закрыть"></button>
+        <button class="btn btn-popup__close btn-popup__close--blue " type="submit"><img src="img/popup-close__blue.png"
+            alt="закрыть"></button>
+        <p class="callback__heading common-text common-text__black">Заказать обратный звонок</p>
+        <p class="callback__text common-text common-text__black"><span>Пожалуйста, заполните поля ниже, чтобы связаться с
+            нами.</span></p>
+        <p class="callback__text common-text common-text__black"><span class="star">*</span><span> — поля со звёздочкой
+            обязательны для заполнения.</span></p>
+        <form class="callback__form callback-form" action="">
+          <div class="callback-form__container">
+            <div class="callback-form__wrapper">
+              <div class="callback-form__block">
+                <input class="js-anim js-valid common-text common-text__black" type="text" data-req="true">
+                <label class="common-text common-text__black"><span>Ваше имя</span><span class="star">*</span></label>
+              </div>
+              <div class="callback-form__block">
+                <input class="js-anim js-valid common-text common-text__black" type="email" data-req="true">
+                <label class="common-text common-text__black"><span>E-mail</span><span class="star">*</span></label>
+              </div>
+              <div class="callback-form__block">
+                <input class="js-anim common-text common-text__black tel-mask" type="tel">
+                <label class="common-text common-text__black"><span>Номер телефона</span></label>
+              </div>
+            </div>
+            <div class="callback-form__wrapper">
+              <div class="callback-form__block">
+                <textarea class="js-anim common-text common-text__black"></textarea>
+                <label class="common-text common-text__black"><span>Сообщение</span></label>
+              </div>
+            </div>
           </div>
-          <div class="callback-form__block">
-            <input class="js-anim js-valid common-text common-text__black" type="email" data-req="true">
-            <label class="common-text common-text__black"><span>E-mail</span><span class="star">*</span></label>
+          <div class="callback-bottom">
+            <div class="pd-checkbox">
+              <label for="checkbox-pd">
+                <input type="checkbox" id="checkbox-pd" class="js-valid" data-req="true"><span
+                  class="fake-checkbox"></span>
+                <p class="pd common-text common-text__black">
+                  <span>Даю согласие на обработку <a href="">персональных данных</a></span>
+                </p>
+              </label>
+            </div>
+            <button class="btn btn-form" type="submit">Отправить</button>
           </div>
-          <div class="callback-form__block">
-            <input class="js-anim common-text common-text__black tel-mask" type="tel">
-            <label class="common-text common-text__black"><span>Номер телефона</span></label>
-          </div>
-        </div>
-        <div class="callback-form__wrapper">
-          <div class="callback-form__block">
-            <textarea class="js-anim common-text common-text__black"></textarea>
-            <label class="common-text common-text__black"><span>Сообщение</span></label>
-          </div>
-        </div>
+        </form>
       </div>
-      <div class="callback-bottom">
-        <div class="pd-checkbox">
-          <label for="checkbox-pd">
-            <input type="checkbox" id="checkbox-pd" class="js-valid" data-req="true"><span class="fake-checkbox"></span>
-            <p class="pd common-text common-text__black">
-              <span>Даю согласие на обработку <a href="">персональных данных</a></span>
-              </p>
-          </label>
-        </div>
-        <button class="btn btn-form" type="submit">Отправить</button>
-      </div>
-    </form>
+    </div>
   </div>
    <!-- <div id="successfully" class="popup callback result">
     <p class="callback__heading common-text common-text__black">Спасибо!</p>

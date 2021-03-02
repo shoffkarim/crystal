@@ -20,11 +20,6 @@
   position fixed
   top: 260px
   right: calc(50% - 430px)
-  background-color #ffffff
-  padding-top 50px
-  padding-right: 80px
-  padding-bottom 60px
-  padding-left: 80px
   transition opacity 0.4s 0.6s, width 0.1s
 
 .callback
@@ -95,6 +90,7 @@
   background-color #0660bf
   opacity 1
   transition: all 0.4s
+  z-index 10
   &:hover
     opacity 0.6
     transition: all 0.4s
@@ -170,6 +166,31 @@
   width: 0%
   visibility hidden
   transition: all 1s
+.popup-callback__wrapper
+  padding-top 50px
+  padding-right: 80px
+  padding-bottom 60px
+  padding-left: 80px
+  width: 860px
+  height: auto
+  background-color #fff
+  margin: auto
+  position relative
+@-moz-document url-prefix()
+  .callback-form__wrapper textarea{margin: 0px}
+  .popup-overflow
+    scrollbar-width: none;
+
+.popup-overflow
+  width: 100%
+  height: 100%
+  overflow-y auto
+  position fixed
+  right 0
+  left 0
+  display flex
+  justify-content: center
+  top: 0
 @media screen and (max-width: 1600px)
   .popup.callback
     top: 100px
@@ -177,6 +198,8 @@
   .popup.callback
     width: 720px;
     right: calc(50% - 360px);
+  .popup-callback__wrapper
+    width: 720px
   .callback-form__container
     flex-direction column
   .callback-form__wrapper
@@ -190,6 +213,8 @@
   .popup.callback
     width: 650px;
     right: calc(50% - 325px);
+  .popup-callback__wrapper
+    width: 650px
   .callback-bottom
     flex-direction column
   .btn-form
@@ -198,15 +223,18 @@
   .popup.callback
     width: 550px;
     right: calc(50% - 275px);
+  .popup-callback__wrapper
+    width: 550px
 @media screen and (max-width: 650px)
   .popup.callback-form
     width: 100%;
     right: 0;
+  .popup-callback__wrapper
     padding: 25px
   .btn-popup__close
     right: 10px
     top: 10px
-    background-color: #fff;
+    background-color: transparent;
   .btn-popup__close--blue
     display: block
   .btn-popup__close--white
@@ -221,7 +249,7 @@
     left: calc(50% - 200px);
 @media screen and (max-width: 400px)
   .popup.callback-form
-    overflow-y scroll
+    overflow hidden
     height: 101vh
     top: 0
   .btn-popup__close--blue
@@ -231,7 +259,7 @@
   .btn-popup__close
     top: 15px;
     right: 15px;
-    background-color: #fff;
+    background-color: transparent;
   .popup.callback.result .btn-popup__close--white
     display: block
     background-color #0660bf
@@ -286,8 +314,7 @@
   background-color transparent
 @media screen and (max-height: 750px)
   .popup.callback-form
-    overflow-y scroll
-    height: 101vh
+    height: 100%
     top: 0
   .btn-popup__close--blue
     display: block
@@ -296,7 +323,7 @@
   .btn-popup__close
     top: 15px;
     right: 15px;
-    background-color: #fff;
+    background-color: transparent;
   .popup.callback.result .btn-popup__close--white
     display: block
     background-color #0660bf

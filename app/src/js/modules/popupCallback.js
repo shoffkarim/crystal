@@ -9,8 +9,10 @@ class PopUpCallback {
       let btnPopUpOpen = document.querySelector(".header-nav__callback");
       btnPopUpOpen.addEventListener("click", function (e) {
         e.preventDefault();
+        let body = document.querySelector("body");
         let overlay = document.querySelector(".popup-overlay");
         let popup = document.querySelector(".popup.callback");
+        body.classList.add("scroll-hidden");
         overlay.classList.remove("popup--hidden");
         popup.classList.remove("popup--hidden");
       });
@@ -27,8 +29,10 @@ class PopUpCallback {
       let btnsPopUpClose = document.querySelectorAll(".btn-popup__close");
       btnsPopUpClose.forEach((btnPopUpClose) => btnPopUpClose.addEventListener("click", function (e) {
         e.preventDefault();
+        let body = document.querySelector("body");
         let overlay = document.querySelector(".popup-overlay");
         let popup = document.querySelector(".popup.callback");
+        body.classList.remove("scroll-hidden");
         overlay.classList.add("popup--hidden");
         popup.classList.add("popup--hidden");
       }));
