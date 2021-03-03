@@ -104,6 +104,12 @@
   &:hover
     border-bottom 1px solid rgba(77, 77, 77, 0)
     transition: all 0.4s
+.breadcrumbs-item:last-child a
+  pointer-events: none
+  text-decoration-color: transparent
+.breadcrumbs-item:last-child svg
+  display: none
+
 @media screen and (max-width: 1500px)
   .contacts-page
     main
@@ -206,6 +212,8 @@
         height: 507px !important
       .map-container
         height: 507px
+  .contacts-page .contacts-wrapper
+    padding-top: 40px
 
 @media screen and (max-width: 600px)
   .contacts-page
