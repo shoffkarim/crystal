@@ -20,12 +20,6 @@ class Opening {
       if (window.pageYOffset < cH - 400 && document.querySelector('.btn-up')) {
         document.querySelector('.btn-up').classList.add('btn-up__hidden');
       }
-      if (window.pageYOffset > cH - 750 && document.querySelector('.special-banner__text')) {
-        document.querySelector('.special-banner__text').classList.add('banner-text--hidden');
-      }
-      if (window.pageYOffset < cH - 750 && document.querySelector('.special-banner__text')) {
-        document.querySelector('.special-banner__text').classList.remove('banner-text--hidden');
-      }
       if ((window.pageYOffset > cH - 400) && document.querySelector('.catalog')) {
         document.querySelector('.catalog').classList.remove('opening');
       }
